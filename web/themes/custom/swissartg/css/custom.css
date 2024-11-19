@@ -17,8 +17,10 @@ footer {
   background-color: #ffee00;
 }
 
-#block-swissartg-branding img {
+#block-swissartg-branding img,
+#block-swissartg-lochstreifen img {
   width: 100%;
+  height: auto;
 }
 
 #block-swissartg-breadcrumbs {
@@ -51,4 +53,8 @@ footer {
 
 main {
   background-color: #ffffa2;
+}
+
+footer {
+  padding: 15px;
 }
