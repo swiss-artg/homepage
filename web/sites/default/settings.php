@@ -22,7 +22,7 @@ $settings['config_sync_directory'] = $app_root . '/../config/default/';
  *
  * TODO: Securly configure hash salt.
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'OD6jgpd7SWW8Afs9WKz2qWvqNQZx60PNc8DWYuy0HcJhqAxdn42OI5H-65Zf3qwChzjlDTkQGQ';
 
 /**
  * Deployment identifier.
