@@ -1,0 +1,13 @@
+# Ignore Composer managed dependencies.
+/web/core
+/vendor/
+
+# Ignore configuration files that may contain sensitive information.
+/web/sites/*/settings.*.php
+/web/sites/*/services.*.yml
+
+# Ignore paths containing user-generated content.
+/web/sites/*/files
+
+# Ignore multi-site test environment.
+/web/sites/simpletest
