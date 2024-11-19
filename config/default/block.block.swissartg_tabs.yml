@@ -1,15 +1,13 @@
-uuid: 6d3d473e-6539-4f8e-8b47-5c0b0d089005
+uuid: a7b19a55-58f0-4423-8c73-1600144ea467
 langcode: en
 status: true
 dependencies:
   theme:
-    - stark
-_core:
-  default_config_hash: T0wbI6qVdThbbIqXDZFg_1VZ3_ittXBdEoUH7d7ux_E
-id: stark_local_tasks
-theme: stark
+    - swissartg
+id: swissartg_tabs
+theme: swissartg
 region: content
-weight: -20
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

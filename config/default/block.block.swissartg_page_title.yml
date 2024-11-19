@@ -1,15 +1,15 @@
-uuid: 5badd1eb-8e79-4656-9b9a-83cfd5b35def
+uuid: 87df9261-de8f-4c7f-b0a0-cb5b5324975a
 langcode: en
 status: true
 dependencies:
   theme:
-    - stark
+    - swissartg
 _core:
   default_config_hash: Oh72CHUkp6cj6dbrXMK2hzCsM05w9cHVoD22rMLQUfk
-id: stark_page_title
-theme: stark
+id: swissartg_page_title
+theme: swissartg
 region: content
-weight: -30
+weight: -1
 provider: null
 plugin: page_title_block
 settings:

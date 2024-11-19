@@ -1,0 +1,13 @@
+name: Swiss ARTG
+type: theme
+base theme: stable9
+description: "Theme for the Swiss Amatuer Ratio Teletype Group"
+logo: logo.png
+core_version_requirement: ^11
+
+regions:
+  header: Header
+  breadcrumb: Breadcrumb
+  menu: Menu
+  content: Content
+  footer: Footer

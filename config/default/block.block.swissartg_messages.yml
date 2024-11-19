@@ -1,17 +1,17 @@
-uuid: 76e63766-9229-46f7-8d06-94acad3848ae
+uuid: 2a48d241-91f8-4a2c-ac3f-956397bf8e52
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - stark
+    - swissartg
 _core:
   default_config_hash: aeqlWs7HwctZeZC7ADcbxfqehJzBRfZKmuZz3DsH3_4
-id: stark_messages
-theme: stark
-region: highlighted
-weight: 0
+id: swissartg_messages
+theme: swissartg
+region: content
+weight: -3
 provider: null
 plugin: system_messages_block
 settings:

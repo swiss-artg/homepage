@@ -1,0 +1,20 @@
+uuid: 61169e2e-45d2-4554-aa84-e65cdae4cb7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swissartg
+id: swissartg_breadcrumbs
+theme: swissartg
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

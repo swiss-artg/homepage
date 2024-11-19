@@ -1,17 +1,17 @@
-uuid: 3032dcaa-96b4-4593-a466-ad71a2f5371c
+uuid: 36321664-b838-471f-afe5-eb2ad99a6a7b
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - stark
+    - swissartg
 _core:
   default_config_hash: sG8t_FghbUscJ-GrnQ8zs_vx5YM4bJCfntrK-J5HcAY
-id: stark_branding
-theme: stark
+id: swissartg_branding
+theme: swissartg
 region: header
-weight: 0
+weight: -3
 provider: null
 plugin: system_branding_block
 settings:

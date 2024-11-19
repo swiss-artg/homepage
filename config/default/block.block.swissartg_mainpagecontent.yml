@@ -1,0 +1,20 @@
+uuid: a3aaabb0-5918-4c54-a37a-ff860fb5441e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swissartg
+id: swissartg_mainpagecontent
+theme: swissartg
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
