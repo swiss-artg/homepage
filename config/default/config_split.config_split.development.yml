@@ -1,0 +1,17 @@
+uuid: 400571c8-f0e9-45ad-83ed-61a2f71b4cc2
+langcode: en
+status: true
+dependencies: {  }
+id: development
+label: Development
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/dev
+module:
+  devel: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

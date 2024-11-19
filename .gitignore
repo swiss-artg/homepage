@@ -1,6 +1,7 @@
 # Ignore Composer managed dependencies.
-/web/core
 /vendor/
+/web/core
+/web/modules/contrib/
 
 # Ignore configuration files that may contain sensitive information.
 /web/sites/*/settings.*.php

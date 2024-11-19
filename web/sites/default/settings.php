@@ -55,6 +55,9 @@ $settings['file_private_path'] = $app_root . '/../private';
  */
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 
+// Use development config in dev environments.
+$config['config_split.config_split.development']['status'] = getenv('IS_DDEV_PROJECT') == 'true';
+
 // Automatically generated include for settings managed by ddev.
 if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists($app_root . '/' . $site_path . '/settings.ddev.php')) {
   include $app_root . '/' . $site_path . '/settings.ddev.php';
