@@ -11,3 +11,6 @@ regions:
   menu: Menu
   content: Content
   footer: Footer
+
+libraries:
+  - swissartg/global-styling
