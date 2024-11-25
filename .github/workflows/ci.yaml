@@ -28,6 +28,26 @@ jobs:
             sha1sum_command = none
           disable_base64: true
 
+      - name: Calculate cache keys
+        id: get-date
+        run: |
+          echo "day=$(date -u "+%Y-%m-%d")" >> $GITHUB_OUTPUT
+          echo "month=$(date -u "+%Y-%m")" >> $GITHUB_OUTPUT
+          echo "year=$(date -u "+%Y")" >> $GITHUB_OUTPUT
+        shell: bash
+
+      - name: Setup cache
+        uses: actions/cache/restore@v4.1.2
+        id: remote
+        with:
+          path: ${{ runner.temp }}/remote
+          key: remote-${{ steps.get-date.outputs.day }}
+          restore-keys: |
+            remote-${{ steps.get-date.outputs.month }}-
+            remote-${{ steps.get-date.outputs.year }}-
+            remote-
+            remote
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -36,15 +56,32 @@ jobs:
       - name: Composer install
         uses: php-actions/composer@v6
         with:
-          dev: no
-          args: --ignore-platform-reqs --classmap-authoritative
+          args: --no-dev --ignore-platform-reqs
 
-      - name: Dry run file upload
+      - name: Download from remote
+        if: steps.remote.outputs.cache-matched-key == ''
+        run: |
+          rclone --exclude-from .ftpignore --copy-links sync remote: ${{ runner.temp }}/remote
+
+      # Prevent future cache misses if steps further down below are failing
+      - name: Update cache
+        if: steps.remote.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/remote
+          key: ${{ steps.remote.outputs.cache-primary-key }}
+
+      # Update files from source keeping times of unchanged files
+      - name: Update remote
+        run: |
+          rsync --checksum --copy-links --delete --perms --recursive --verbose ./ ${{ runner.temp }}/remote
+
+      - name: Dry run upload to remote
         if: github.ref != 'refs/heads/trunk'
         run: |
-          rclone -q --exclude-from .ftpignore --copy-links check --combined - . remote: 2>/dev/null | grep -vE '^= '
+          rclone -q --exclude-from .ftpignore --copy-links check --combined - ${{ runner.temp }}/remote remote: 2>/dev/null | grep -vE '^= '
 
-      - name: Upload files
+      - name: Upload to remote
         if: github.ref == 'refs/heads/trunk'
         run: |
-          rclone -q --exclude-from .ftpignore --copy-links sync . remote:
+          rclone --exclude-from .ftpignore --copy-links sync ${{ runner.temp }}/remote remote:

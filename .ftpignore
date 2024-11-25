@@ -1,10 +1,14 @@
 *.log
-.ddev
+*.sql*
+.ddev*
+.ddev*/**
 .editorconfig
 .ftp*
 .git*
 .git*/**
-docker*
+DOCKER*
 composer.*
+docker*
+web/*lint*
 web/sites/*/files/
 web/sites/*/settings.*.php
