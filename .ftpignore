@@ -1,0 +1,10 @@
+*.log
+.ddev
+.editorconfig
+.ftp*
+.git*
+.git*/**
+docker*
+composer.*
+web/sites/*/files/
+web/sites/*/settings.*.php
