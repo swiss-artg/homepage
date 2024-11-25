@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - trunk
+  push:
+    branches:
+      - trunk
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Rclone
+        uses: AnimMouse/setup-rclone@v1
+        with:
+          rclone_config: |
+            [remote]
+            type = sftp
+            host = ${{ secrets.FTP_SERVER }}
+            user = ${{ secrets.FTP_USER }}
+            port = ${{ secrets.FTP_PORT }}
+            # Password must be obfuscated using `rclone obfuscate`
+            pass = ${{ secrets.FTP_PASSWORD }}
+            shell_type = unix
+            md5sum_command = none
+            sha1sum_command = none
+          disable_base64: true
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Composer install
+        uses: php-actions/composer@v6
+        with:
+          dev: no
+          args: --ignore-platform-reqs --classmap-authoritative
+
+      - name: Dry run file upload
+        if: github.ref != 'refs/heads/trunk'
+        run: |
+          rclone -q --exclude-from .ftpignore --copy-links check --combined - . remote: 2>/dev/null | grep -vE '^= '
+
+      - name: Upload files
+        if: github.ref == 'refs/heads/trunk'
+        run: |
+          rclone -q --exclude-from .ftpignore --copy-links sync . remote:
