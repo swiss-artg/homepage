@@ -14,3 +14,5 @@ timezone: Europe/Zurich
 composer_version: "2"
 web_environment: []
 corepack_enable: true
+webimage_extra_packages:
+  - rclone

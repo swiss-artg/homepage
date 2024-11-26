@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+## Description: Fetches the files directory content
+## Usage: fetch-files
+## Example: ddev fetch-files
+
+rclone sync \
+  --sftp-host "${REMOTE_HOST}" \
+  --sftp-user "${REMOTE_FTP_USER}" \
+  --sftp-port "${REMOTE_FTP_PORT}" \
+  --sftp-pass "$(rclone obscure ${REMOTE_FTP_PASSWORD})" \
+  --progress \
+  --quiet \
+  :sftp:web/sites/default/files web/sites/default/files
