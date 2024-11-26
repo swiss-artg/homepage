@@ -1,19 +1,19 @@
 # SWISS ARTG Homepage
 
-This repository holds the codebase for the homepage of the SWISS Amateure Radio Teletype Group.
+This repository holds the codebase for the homepage of the SWISS Amateur Radio Teletype Group.
 
 ## Principles
 
 This repository is the source of truth.
-Changes made in this repository will be pushed the the hosting.
+Changes made in this repository will be pushed the hosting.
 Consequently, changes made directly on the hosting will be reverted.
 
-Using [DDEV][ddev], a local develoment envrionment provides a save space to do code changes before they are being pushed to the hosting.
+Using [DDEV][ddev], a local development environment provides a save space to do code changes before they are being pushed to the hosting.
 
-The Drupal Configuration Management is used to export site configureation to config files tracked within this repository.
-Changes to the site must be done in the local develoment envrionment first and then pushed to the hosting through code changes.
+The Drupal Configuration Management is used to export site configuration to config files tracked within this repository.
+Changes to the site must be done in the local development environment first and then pushed to the hosting through code changes.
 
-## Setup a local development environment
+## Set up a local development environment
 
 ### Prerequisites
 
@@ -21,7 +21,7 @@ Changes to the site must be done in the local develoment envrionment first and t
   See its [documentation](https://ddev.com/get-started/) on how to get started on your platform.
 * A git client.
   Checkout the [git download page](https://git-scm.com/downloads) on how to get it for your platform.
-* Read only access to the database on the hosting.
+* Read-only access to the database on the hosting.
 * FTP access to the hosting.
 
 ### Procedure
@@ -32,7 +32,7 @@ Changes to the site must be done in the local develoment envrionment first and t
    git clone git@github.com:swiss-artg/homepage.git swiss-artg
    ```
 
-   The folder `swiss-artg` will be referd to as _repository root_.
+   The folder `swiss-artg` will be referred to as _repository root_.
 
 2. Configure the database access
 
@@ -48,7 +48,7 @@ Changes to the site must be done in the local develoment envrionment first and t
    REMOTE_FTP_PORT=<ftp_port>
    ```
 
-   Replace all instances of `<…>` with the values you recieved from a site administrator.
+   Replace all instances of `<…>` with the values you received from a site administrator.
 
    Protect the file from prying eyes.
 
@@ -78,9 +78,9 @@ Changes to the site must be done in the local develoment envrionment first and t
    ddev fetch-files
    ```
 
-  `fetch-db` created a new database dump file in `.dbdump`
-  Check the content of that directory for available dumpfiles.
-  Use an apropriate one for `<dumpfile>`
+  `fetch-db` creates a new database dump file in `.dbdump`.
+  Check the content of that directory for available dump files.
+  Use an appropriate one for `<dumpfile>` in the command shown above.
 
 6. Reset cache config and admin password
 
