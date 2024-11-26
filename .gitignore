@@ -12,3 +12,10 @@
 
 # Ignore multi-site test environment.
 /web/sites/simpletest
+
+# Ignore ddev secrets
+/.ddev/.env
+
+# DB dump directory
+!/.dbdump/.gitkeep
+/.dbdump/*
