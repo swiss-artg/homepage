@@ -98,4 +98,9 @@ Changes to the site must be done in the local develoment envrionment first and t
 
    Use user `admin` with password `admin` to login as site administrator.
 
+## Related documentations
+
+* [DDEV](https://ddev.readthedocs.io/)
+* [Drupal User Guide](https://www.drupal.org/docs/user_guide/en/index.html)
+
 [ddev]: https://ddev.com/
