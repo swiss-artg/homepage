@@ -4,10 +4,12 @@
 ## Usage: fetch-db
 ## Example: ddev fetch-db
 
+db="${1:-${REMOTE_DB}}"
+
 mysqldump \
   --host="${REMOTE_HOST}" \
   --user="${REMOTE_DB_USER}" \
   --password="${REMOTE_DB_PASSWORD}" \
   --single-transaction \
   --no-tablespaces \
-  "${REMOTE_DB}" > ".dbdumps/${REMOTE_DB}_$(date +"%Y-%m-%dT%Y-%H%M").sql"
+  "${db}" >".dbdumps/${db}_$(date +"%Y-%m-%dT%Y-%H%M").sql"
