@@ -1,0 +1,17 @@
+uuid: 1c3593c5-3893-4588-a3b5-254a52e03eb3
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Migrierte News
+type: news_migrated
+description: 'Von Typo3 migrierte News'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true
