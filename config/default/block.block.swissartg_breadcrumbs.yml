@@ -1,5 +1,5 @@
 uuid: 61169e2e-45d2-4554-aa84-e65cdae4cb7b
-langcode: en
+langcode: de
 status: true
 dependencies:
   module:
@@ -14,7 +14,7 @@ provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
-  label: Breadcrumbs
+  label: Pfadnavigation
   label_display: '0'
   provider: system
 visibility: {  }

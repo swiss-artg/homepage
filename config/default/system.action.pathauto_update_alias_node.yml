@@ -1,5 +1,5 @@
 uuid: b9bdac94-10f9-46a8-990e-4fc83ef2c1a5
-langcode: en
+langcode: de
 status: true
 dependencies:
   module:
@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: Cr0CsPUSuio4ClP7bOTqHBefJOLtN5KPyKyYj9E4qvQ
 id: pathauto_update_alias_node
-label: 'Update URL alias'
+label: 'URL-Alias aktualisieren'
 type: node
 plugin: pathauto_update_alias
 configuration: {  }

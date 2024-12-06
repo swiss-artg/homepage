@@ -1,5 +1,5 @@
 uuid: 7ccd89fd-188d-4e3c-ab58-1211158162c0
-langcode: en
+langcode: de
 status: true
 dependencies:
   module:
@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Migrated Page'
+name: 'Migrierted Seite'
 type: migrated_page
 description: null
 help: null

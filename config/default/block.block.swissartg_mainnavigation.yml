@@ -1,5 +1,5 @@
 uuid: 54b7e8ac-f97b-4292-a104-81476f516d0a
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
@@ -11,12 +11,12 @@ dependencies:
 id: swissartg_mainnavigation
 theme: swissartg
 region: menu
-weight: 0
+weight: -4
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
+  label: Hauptnavigation
   label_display: '0'
   provider: system
   level: 1

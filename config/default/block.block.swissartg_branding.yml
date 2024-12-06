@@ -1,5 +1,5 @@
 uuid: 36321664-b838-471f-afe5-eb2ad99a6a7b
-langcode: en
+langcode: de
 status: true
 dependencies:
   module:
@@ -11,12 +11,12 @@ _core:
 id: swissartg_branding
 theme: swissartg
 region: header
-weight: -3
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: 'Site branding'
+  label: 'Branding der Website'
   label_display: '0'
   provider: system
   use_site_logo: true

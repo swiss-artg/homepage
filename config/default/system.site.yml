@@ -1,6 +1,6 @@
 _core:
   default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
-langcode: en
+langcode: de
 uuid: 0492c8d6-5ccd-45cf-8cf2-9623c00e539c
 name: SWISS-ARTG
 mail: admin@example.com
@@ -11,5 +11,5 @@ page:
   front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
-default_langcode: en
+default_langcode: de
 mail_notification: null

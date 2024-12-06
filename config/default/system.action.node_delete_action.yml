@@ -1,5 +1,5 @@
 uuid: d8809e30-723d-47ca-b912-277c488a9dc2
-langcode: en
+langcode: de
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: t43OqwzP3CTbcAagSsWKNy6KwMm_zShXo3c4-So6rQg
 id: node_delete_action
-label: 'Delete content'
+label: 'Inhalt löschen'
 type: node
 plugin: 'entity:delete_action:node'
 configuration: {  }
