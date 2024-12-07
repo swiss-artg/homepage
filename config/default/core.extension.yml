@@ -6,6 +6,7 @@ module:
   block_content: 0
   breakpoint: 0
   coffee: 0
+  config: 0
   config_split: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -14,7 +15,9 @@ module:
   file: 0
   filter: 0
   image: 0
+  language: 0
   link: 0
+  locale: 0
   menu_link_content: 0
   menu_ui: 0
   mysql: 0

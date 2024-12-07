@@ -1,5 +1,5 @@
 uuid: 62d758a9-fa2e-4a1e-9bcb-8505e069deef
-langcode: en
+langcode: de
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
-label: 'Authenticated user'
+label: 'Angemeldeter Benutzer'
 weight: 1
 is_admin: false
 permissions:

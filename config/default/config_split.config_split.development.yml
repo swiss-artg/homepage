@@ -1,9 +1,9 @@
 uuid: 400571c8-f0e9-45ad-83ed-61a2f71b4cc2
-langcode: en
+langcode: de
 status: true
 dependencies: {  }
 id: development
-label: Development
+label: Entwiklung
 description: ''
 weight: 0
 stackable: false

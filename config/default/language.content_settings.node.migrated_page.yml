@@ -1,0 +1,11 @@
+uuid: 614ee24c-a5d0-49be-951c-a1d7461d03f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.migrated_page
+id: node.migrated_page
+target_entity_type_id: node
+target_bundle: migrated_page
+default_langcode: site_default
+language_alterable: false

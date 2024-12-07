@@ -1,5 +1,5 @@
 uuid: 1d6491a0-f94f-4bd5-b171-efa572838778
-langcode: en
+langcode: de
 status: true
 dependencies:
   config:
@@ -11,12 +11,12 @@ dependencies:
 id: swissartg_useraccountmenu
 theme: swissartg
 region: menu
-weight: 0
+weight: -3
 provider: null
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'
-  label: 'User account menu'
+  label: Benutzermenü
   label_display: '0'
   provider: system
   level: 1
