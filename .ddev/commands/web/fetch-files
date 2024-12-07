@@ -4,6 +4,7 @@
 ## Usage: fetch-files
 ## Example: ddev fetch-files
 
+chmod -R +w web/sites/default/files
 rclone sync \
   --sftp-host "${REMOTE_HOST}" \
   --sftp-user "${REMOTE_FTP_USER}" \
