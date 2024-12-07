@@ -13,7 +13,7 @@ body {
 }
 
 header,
-footer {
+footer[role=contentinfo] {
   background-color: #ffee00;
 }
 
@@ -56,6 +56,7 @@ main {
 }
 
 .menu {
+  min-width: 220px;
   width: 220px;
 }
 
@@ -89,10 +90,44 @@ main {
   flex-grow: 1;
 }
 
-footer {
+#block-swissartg-mainpagecontent {
+  background-color: #EEEEEE;
+  box-shadow: 1px 2px 4px rgba(0,0,0, .5);
+  padding: 3px;
+}
+
+#block-swissartg-mainpagecontent article {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+#block-swissartg-mainpagecontent article > h2 {
+  font-size: 16px;
+  padding: 0px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+#block-swissartg-mainpagecontent article footer time {
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 8px;
+  border-right: 1px solid #ddd;
+}
+
+#block-swissartg-mainpagecontent article footer time:last-child {
+  border-right: 0;
+}
+
+footer[role=contentinfo] {
   padding: 15px;
 }
 
 a {
   text-decoration: none;
+  color: #335f8d;
+}
+
+a:hover {
+  color: #ff8400;
 }

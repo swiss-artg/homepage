@@ -1,20 +1,20 @@
-uuid: 2a53298a-320c-424a-861a-2e6ce9ffc74a
+uuid: 73a85b25-b9ce-4e0d-a4a6-4a36829f551c
 langcode: de
 status: true
 dependencies:
   config:
     - field.storage.node.body
     - filter.format.html_full
-    - node.type.migrated_page
+    - node.type.news_migrated
   module:
     - text
-id: node.migrated_page.body
+id: node.news_migrated.body
 field_name: body
 entity_type: node
-bundle: migrated_page
+bundle: news_migrated
 label: Body
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
@@ -22,5 +22,5 @@ settings:
   display_summary: true
   required_summary: false
   allowed_formats:
-    - full_html
+    - html_full
 field_type: text_with_summary
