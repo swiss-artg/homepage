@@ -79,6 +79,54 @@ class News extends SqlBase {
       . $row->getSourceProperty('teaser')
       . '</p>'
       . $row->getSourceProperty('bodytext'));
+
+    switch ($row->getSourceProperty('author')) {
+      case '':
+      case 'Vorstand':
+      case 'Vorstand ':
+        $row->setSourceProperty('author', null);
+        break;
+
+      case 'HB3YZE / OE8VIK':
+        $row->setSourceProperty('author', 'hb3yze');
+        break;
+
+      case 'HB9AUR/HB3YZE':
+        $row->setSourceProperty('author', 'hb9aur');
+        break;
+
+      case 'HB9CJD, HB9DSN':
+        $row->setSourceProperty('author', 'hb9cjd');
+        break;
+
+      case 'HB9CTB, HB9CJD':
+        $row->setSourceProperty('author', 'hb9ctb');
+        break;
+
+      case 'HB9GKL, Eduard Luzi':
+        $row->setSourceProperty('author', 'hb9gkl');
+        break;
+
+      case 'HB9PAE und HB9BXQ':
+      case 'HB9PAE, DB7GV':
+      case 'HB9PAE, HB9CZF':
+      case 'HB9PAE, Peter':
+        $row->setSourceProperty('author', 'hb9pae');
+        break;
+
+      case 'Marc Balmer HB9SSB':
+        $row->setSourceProperty('author', 'hb9ssb');
+        break;
+
+      case 'Michi HB3YZE':
+        $row->setSourceProperty('author', 'hb3yze');
+        break;
+
+      default:
+        $row->setSourceProperty('author', strtolower($row->getSourceProperty('author')));
+        break;
+    }
+
     return parent::prepareRow($row);
   }
 }

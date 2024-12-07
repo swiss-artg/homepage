@@ -22,6 +22,10 @@ process:
     default_value: html_full
   created: crdate
   changed: datetime
+  uid:
+    plugin: migration_lookup
+    migration: users
+    source: author
 destination:
   plugin: 'entity:node'
   default_bundle: news_migrated
