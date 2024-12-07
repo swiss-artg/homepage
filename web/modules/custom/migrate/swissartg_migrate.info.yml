@@ -1,0 +1,6 @@
+name: Swiss ARTG Content Migration
+description: Content migration from the previous Typo 3 site into Drupal.
+package: custom
+
+type: module
+core_version_requirement: ^11
