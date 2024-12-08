@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
+    - node.type.news
     - node.type.news_migrated
     - system.menu.main
   module:
@@ -204,6 +205,7 @@ display:
           operator: in
           value:
             news_migrated: news_migrated
+            news: news
           group: 2
           exposed: false
           expose:
