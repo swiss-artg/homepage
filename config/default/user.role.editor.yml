@@ -1,0 +1,33 @@
+uuid: 2d7feae1-5edd-4f9a-89af-243b2d2a7f97
+langcode: de
+status: true
+dependencies:
+  config:
+    - filter.format.html_full
+    - node.type.migrated_page
+    - node.type.news_migrated
+  module:
+    - coffee
+    - file
+    - filter
+    - node
+    - system
+    - toolbar
+id: editor
+label: Redakteur
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access coffee'
+  - 'access content'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'administer menu'
+  - 'create news_migrated content'
+  - 'edit any migrated_page content'
+  - 'edit any news_migrated content'
+  - 'use text format html_full'
+  - 'view own unpublished content'
+  - 'view the administration theme'
