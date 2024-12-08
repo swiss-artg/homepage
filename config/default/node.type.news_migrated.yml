@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Migrierte News
+name: 'Migrierte News'
 type: news_migrated
 description: 'Von Typo3 migrierte News'
 help: null
