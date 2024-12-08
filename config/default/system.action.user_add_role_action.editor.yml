@@ -1,0 +1,14 @@
+uuid: 2b5ed78b-40e8-4e2b-b5b5-b3a29e04fa7b
+langcode: de
+status: true
+dependencies:
+  config:
+    - user.role.editor
+  module:
+    - user
+id: user_add_role_action.editor
+label: 'Den ausgewählten Benutzern die Rolle Redakteur zuweisen'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: editor
