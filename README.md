@@ -64,31 +64,22 @@ Changes to the site must be done in the local development environment first and 
    ddev start
    ```
 
-4. Install the dependencies
-
-   ```sh
-   ddev composer install
-   ```
-
-5. Fetch content from the hosting
+4. Fetch content from the hosting
 
    ```sh
    ddev fetch-db
-   ddev import-db -f .dbdump/<dumpfile>
    ddev fetch-files
    ```
 
-  `fetch-db` creates a new database dump file in `.dbdump`.
-  Check the content of that directory for available dump files.
-  Use an appropriate one for `<dumpfile>` in the command shown above.
-
-6. Reset cache config and admin password
+6. Reset local environment
 
    ```sh
-   ddev drush cim -y
-   ddev drush cr
-   ddev drush upwd admin admin
+   ddev reset
    ```
+
+  Doing a full reset all the time, can be a bit over the top and time consuming.
+  Check out the contents of `.ddev/commands/host/reset` to set what that command is doing.
+  Run indivudall commands as you seem fit in your development workflow.
 
 7. Access the site
 

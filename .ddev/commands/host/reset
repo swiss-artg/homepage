@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+# Identify the DB files to import
+# Provide aruuments to the script if you want ot import specific files.
+dump_drupal="${1:-$(ls .dbdumps/ch24005_drupal_vorschau_*.sql | tail -n1)}"
+dump_typo3="${2:-$(ls .dbdumps/ch24005_swiss_artg_*.sql | tail -n1)}"
+
+# Import database dumps
+# Examples:
+# ddev import-db -f .dbdumps/ch24005_drupal_vorschau_2024-12-07T2024-1934.sql
+# ddev import-db -d typo3 -f .dbdumps/ch24005_swiss_artg_20201030_2024-12-07T2024-1329.sql
+if [ -f "${dump_drupal}" ]; then
+  ddev import-db -f "${dump_drupal}"
+else
+  echo -e '\033[41mERROR:\033[0m No Drupal database dump file found' >&2
+  echo 'Run `ddev fetch-db` first' >&2
+  exit 1
+fi
+
+if [ -f "${dump_typo3}" ]; then
+   ddev import-db -d typo3 -f "${dump_typo3}"
+else
+  echo -e '\033[0;30m\033[43mWARNING:\033[0m No Typo3 database dump file found' >&2
+  echo 'Run `ddev fetch-db ch24005_swiss_artg_20201030` first if you want to run content migrations' >&2
+fi
+
+# Install dependencies
+ddev composer install
+
+# Load and update configuration
+ddev drush cim -y
+ddev drush locale:update
+
+# Clear cache and reset admin password
+ddev drush cr
+ddev drush upwd admin admin
