@@ -5,6 +5,7 @@ dependencies:
   config:
     - filter.format.html_full
     - node.type.migrated_page
+    - node.type.news
     - node.type.news_migrated
   module:
     - coffee
@@ -25,8 +26,9 @@ permissions:
   - 'access files overview'
   - 'access toolbar'
   - 'administer menu'
-  - 'create news_migrated content'
+  - 'create news content'
   - 'edit any migrated_page content'
+  - 'edit any news content'
   - 'edit any news_migrated content'
   - 'use text format html_full'
   - 'view own unpublished content'

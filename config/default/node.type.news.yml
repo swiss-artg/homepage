@@ -1,0 +1,17 @@
+uuid: 54cac42e-b281-413b-9049-4a5607b94c2b
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: News
+type: news
+description: 'Kurze, zeitlich begrenzt relevante Information.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true
