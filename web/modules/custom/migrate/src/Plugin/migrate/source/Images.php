@@ -25,12 +25,6 @@ class Images extends SqlBase {
         'identifier',
       ]);
 
-     //$group = $query->andConditionGroup()
-     //  ->condition('deleted', 1, '!=')
-     //  ->condition('hidden', 1, '!=')
-     //  ->condition('endtime', 0);
-     //$query->condition($group);
-
     return $query;
   }
 
