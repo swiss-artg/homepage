@@ -12,10 +12,13 @@ label: News-Migration
 source:
   plugin: news
 process:
+  bodytext_processed:
+    - plugin: typo3_inline_file
+      migration: images
+      source: bodytext
   nid: id
   title: title
-  body: bodytext
-  body/0/value: body
+  body/0/value: '@bodytext_processed'
   body/0/summary: teaser
   body/0/format:
     plugin: default_value
