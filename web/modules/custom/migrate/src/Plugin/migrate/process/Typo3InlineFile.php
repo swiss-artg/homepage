@@ -89,34 +89,41 @@ class Typo3InlineFile extends ProcessPluginBase implements ContainerFactoryPlugi
     }
 
     $crawler = new Crawler($value);
-    $lookup_migration_id = $this->configuration['migration'];
 
     foreach ($crawler->filter('a') as $node) {
-      $url = $node->getAttribute('href');
+      $this->transformNode($node, 'href');
+    }
+
+    foreach ($crawler->filter('img') as $node) {
+      $this->transformNode($node, 'src');
+    }
+
+    return $crawler->html();
+  }
+
+  private function transformNode($node, String $attribute) {
+      $url = $node->getAttribute($attribute);
 
       if (!str_starts_with($url, 't3://file')) {
-        continue;
+        return;
       }
 
       parse_str(parse_url($url, PHP_URL_QUERY), $query);
 
       if (!array_key_exists('uid', $query)) {
-        continue;
+        return;
       }
 
       $node->setAttribute('data-entity-typo3-uid', $query['uid']);
       $node->setAttribute('data-entity-type', 'file');
-      $result = $this->migrateLookup->lookup($lookup_migration_id, array($query['uid']));
+      $result = $this->migrateLookup->lookup($this->configuration['migration'], array($query['uid']));
 
       if (empty($result[0]['fid'])) {
-        continue;
+        return;
       }
 
       $file = $this->fileStorage->load($result[0]['fid']);
       $node->setAttribute('data-entity-uuid', $file->uuid());
-      $node->setAttribute('href', $file->createFileUrl());
-    }
-
-    return $crawler->html();
+      $node->setAttribute($attribute, $file->createFileUrl());
   }
 }
