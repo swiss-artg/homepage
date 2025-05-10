@@ -25,7 +25,9 @@
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_tools": "^6.0",
         "drupal/pathauto": "^1.13",
-        "drush/drush": "^13.3"
+        "drush/drush": "^13.3",
+        "symfony/css-selector": "^7.2",
+        "symfony/dom-crawler": "^7.2"
     },
     "conflict": {
         "drupal/drupal": "*"
