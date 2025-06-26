@@ -14,5 +14,5 @@ type: page
 description: 'Inhaltsseite mit anpassbaren Seitenabschnitten für Inhalte mit andauernder Relevanz.'
 help: null
 new_revision: true
-preview_mode: 2
+preview_mode: 1
 display_submitted: true
