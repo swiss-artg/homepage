@@ -24,6 +24,7 @@
         "drupal/core-recommended": "^11.0",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_tools": "^6.0",
+        "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.13",
         "drush/drush": "^13.3"
     },
