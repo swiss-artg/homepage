@@ -1,0 +1,22 @@
+uuid: c5797e44-a631-4fc5-8b31-5d6b4b2de1c5
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'file:file:dc310da7-aace-4eef-9315-6f5af8f0d7a6'
+  module:
+    - layout_paragraphs
+id: layout
+label: Layout
+icon_uuid: dc310da7-aace-4eef-9315-6f5af8f0d7a6
+icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAACE3AAAhNwEzWJ96AAABfUlEQVR4nO3cQU7CQBiA0akn4Ah6/0vITbzJGDZuClgt9sPkvaSbWegP36INzLDMOQedF+99S4CYADEBYgLEBIgJEBMgJkBMgJgAMQFiAsQEqF0+jv7tNcY4jTHeL3/moOvyv0635n22ebZcewMc+WK/XvS1WZ5xni3Xri9klmVJvs2Zcy6rxXCeMcbbnPNjtbqBAA9wa54t3IRjAsQEiAkQEyAmQEyAmAAxAWICxASICRATICZATICYADEBYgLEBIgJEBMgJkBMgNi/DLAsy+tq8Z/aG+C8Wvl75zu70JJ5Vis/YXNuuznXj3XE3IRjAsQEiAkQE6B27dHIY+hxj6GrBWfEHjePM2IHuTXPFu4BMQFiAsQEiAkQEyAmQEyAmAAxAWICxASICRATICZATICYADEBYgLEBIgJEBMgJkBMgJgzYg+wZx5nxPa7N8/3ru1XtDn3uM25zojF3IRjAsQEiAkQEyAmQEyAmAAxAWICxASICRATICZAaYzxCVALFRku/KZzAAAAAElFTkSuQmCC'
+description: 'Flexibles Anordnen von Inhaltselemente in mehreren Spalten.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_onecol: 'One column'
+      layout_twocol: 'Two column'
+      layout_twocol_bricks: 'Two column bricks'
+      layout_threecol_25_50_25: 'Three column 25/50/25'
+      layout_threecol_33_34_33: 'Three column 33/34/33'
