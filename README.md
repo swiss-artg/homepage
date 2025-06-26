@@ -38,7 +38,7 @@ Changes to the site must be done in the local development environment first and 
 
    Create the file `.ddev/.env` using the text editor of your choice with the following content.
 
-   ```
+   ```sh
    REMOTE_HOST=<host>
    REMOTE_DB=<db>
    REMOTE_DB_USER=<db_user>
@@ -58,7 +58,7 @@ Changes to the site must be done in the local development environment first and 
 
 3. Start the DDEV environment
 
-  Execute this from within the repository root.
+   Execute this from within the repository root.
 
    ```sh
    ddev start
@@ -71,17 +71,17 @@ Changes to the site must be done in the local development environment first and 
    ddev fetch-files
    ```
 
-6. Reset local environment
+5. Reset local environment
 
    ```sh
    ddev reset
    ```
 
-  Doing a full reset all the time, can be a bit over the top and time consuming.
-  Check out the contents of `.ddev/commands/host/reset` to set what that command is doing.
-  Run indivudall commands as you seem fit in your development workflow.
+   Doing a full reset all the time, can be a bit over the top and time consuming.
+   Check out the contents of `.ddev/commands/host/reset` to set what that command is doing.
+   Run indivudall commands as you seem fit in your development workflow.
 
-7. Access the site
+6. Access the site
 
    ```sh
    ddev launch
