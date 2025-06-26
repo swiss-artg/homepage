@@ -1,0 +1,12 @@
+uuid: a5f6d626-fdec-4d18-9c5a-b63d2ea4c369
+langcode: de
+status: true
+dependencies:
+  content:
+    - 'file:file:ff4c38d0-a6cb-4d33-9ba9-26f7fd1676ae'
+id: text
+label: Text
+icon_uuid: ff4c38d0-a6cb-4d33-9ba9-26f7fd1676ae
+icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAACE3AAAhNwEzWJ96AAABxklEQVR4nO3dwU3DMBhAYRsxQFZgEmADRm42YARGYIO/itQDqqOGpraf1bxPysWlbpMnlMgHN0dEEufFa88yAMwAMAPADAAzAMwAMAPADAAzAMwAtGUtqMaRUppSSqdlyic/lnOcal23aotxOefli70XLzynOSI+qly3igGOtqz6FhE/xeidDLBTROQa83gThhkAZgCYAWAGgL12/vjPiDgVo/9w71PWI08pPZ/o/A+AGQDWO8B3MXJwNQPMxcjV6xHxW4yOafNcipG91lbo9hwbq6EPryCuzHnzWJvjjs9qei5NVkNb6/kU1JM3YZgBYAaAGQBmAJgBYAaAGQBmAJgBYAaAGQBmAJgBYAaAGQBmAJgBYAaAGQBmAJgBYAaAGQBmAJgBYAaAGQBmAJgBYAaAGQBmAJgBYAaAGQBmAJgBYAaAGQBmAJgBYAaAGQBmAJgBYAaADRcg5zwtO7Ev+wP9PYo/3HD9/suc0+139Tfchk2Nt8Gvtu18LSMGaP2Fqmw7X8vhAoy2lZk3YZgBYAaAjRig3qaopZZz7zJigK9GF2q+zD0Uf1Me5j0AZgCYAWAGgBkAZgCYAWAGgBkAZgCYAUgppTNNrd0r9mP80gAAAABJRU5ErkJggg=='
+description: 'Textinhalt mit einfachen Formatierungen.'
+behavior_plugins: {  }

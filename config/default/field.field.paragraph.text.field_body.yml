@@ -1,0 +1,26 @@
+uuid: d2b641aa-d97e-4401-b0d0-25072c8015f3
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.html
+    - filter.format.plain_text
+    - paragraphs.paragraphs_type.text
+  module:
+    - text
+id: paragraph.text.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: text
+label: Inhalt
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - html
+    - plain_text
+field_type: text_long

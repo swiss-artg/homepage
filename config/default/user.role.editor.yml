@@ -3,6 +3,7 @@ langcode: de
 status: true
 dependencies:
   config:
+    - filter.format.html
     - filter.format.html_full
     - node.type.migrated_page
     - node.type.news
@@ -30,6 +31,7 @@ permissions:
   - 'edit any migrated_page content'
   - 'edit any news content'
   - 'edit any news_migrated content'
+  - 'use text format html'
   - 'use text format html_full'
   - 'view own unpublished content'
   - 'view the administration theme'

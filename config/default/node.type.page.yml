@@ -1,0 +1,18 @@
+uuid: d732d50b-36c0-49b7-be97-795fdfc1a757
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Seite
+type: page
+description: 'Inhaltsseite mit anpassbaren Seitenabschnitten für Inhalte mit andauernder Relevanz.'
+help: null
+new_revision: true
+preview_mode: 2
+display_submitted: true
