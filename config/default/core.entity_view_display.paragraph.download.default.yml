@@ -1,0 +1,22 @@
+uuid: ebce8d5f-ae82-4ab7-ba07-16ef09720865
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.download.field_file
+    - paragraphs.paragraphs_type.download
+id: paragraph.download.default
+targetEntityType: paragraph
+bundle: download
+mode: default
+content:
+  field_file:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

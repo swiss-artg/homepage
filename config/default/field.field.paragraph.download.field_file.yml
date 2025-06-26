@@ -1,0 +1,29 @@
+uuid: 7130d08f-a5fd-4c1b-96a1-9390c8af5d94
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file
+    - media.type.file
+    - paragraphs.paragraphs_type.download
+id: paragraph.download.field_file
+field_name: field_file
+entity_type: paragraph
+bundle: download
+label: Datei
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      file: file
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

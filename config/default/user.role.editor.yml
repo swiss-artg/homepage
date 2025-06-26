@@ -3,14 +3,19 @@ langcode: de
 status: true
 dependencies:
   config:
+    - filter.format.html
     - filter.format.html_full
+    - media.type.file
+    - media.type.image
     - node.type.migrated_page
     - node.type.news
     - node.type.news_migrated
+    - node.type.page
   module:
     - coffee
     - file
     - filter
+    - media
     - node
     - system
     - toolbar
@@ -26,10 +31,32 @@ permissions:
   - 'access files overview'
   - 'access toolbar'
   - 'administer menu'
+  - 'create file media'
+  - 'create image media'
   - 'create news content'
+  - 'create page content'
+  - 'delete any file media'
+  - 'delete any image media'
+  - 'delete any page content'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own page content'
+  - 'edit any file media'
+  - 'edit any image media'
   - 'edit any migrated_page content'
   - 'edit any news content'
   - 'edit any news_migrated content'
+  - 'edit any page content'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'revert any file media revisions'
+  - 'revert any image media revisions'
+  - 'revert page revisions'
+  - 'use text format html'
   - 'use text format html_full'
+  - 'view any file media revisions'
+  - 'view any image media revisions'
   - 'view own unpublished content'
+  - 'view page revisions'
   - 'view the administration theme'
