@@ -1,0 +1,14 @@
+uuid: 689ec918-ebef-4a36-afc3-cb4356059bfd
+langcode: de
+status: true
+dependencies: {  }
+id: file
+label: Datei
+description: 'Einfache Datei'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name
