@@ -96,8 +96,12 @@ main {
   padding: 3px;
 }
 
+:root {
+  --layout-gap: 1em;
+}
+
 #block-swissartg-mainpagecontent article {
-  padding-bottom: 15px;
+  padding: calc(var(--layout-gap) / 2);
   margin-bottom: 15px;
 }
 

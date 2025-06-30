@@ -14,3 +14,9 @@ regions:
 
 libraries:
   - swissartg/global-styling
+
+libraries-override:
+  layout_discovery/twocol:
+    css:
+      theme:
+        /core/themes/stable9/layouts/layout_discovery/twocol/twocol.css: css/layouts/twocol.css
