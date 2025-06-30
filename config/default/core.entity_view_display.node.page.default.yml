@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.page.field_body
     - node.type.page
   module:
-    - entity_reference_revisions
+    - layout_paragraphs
     - user
 id: node.page.default
 targetEntityType: node
@@ -14,7 +14,7 @@ bundle: page
 mode: default
 content:
   field_body:
-    type: entity_reference_revisions_entity_view
+    type: layout_paragraphs
     label: hidden
     settings:
       view_mode: default
