@@ -53,11 +53,13 @@ footer[role=contentinfo] {
 main {
   background-color: #ffffa2;
   display: flex;
+  flex-flow: wrap;
 }
 
 .menu {
-  min-width: 220px;
-  width: 220px;
+  flex: 1 1;
+  max-width: 14em;
+  min-width: 12em;
 }
 
 .menu ul {
@@ -87,7 +89,8 @@ main {
 
 .layout-content {
   padding: 4px 25px 50px;
-  flex-grow: 1;
+  flex: 3 3;
+  min-width: 18em;
 }
 
 #block-swissartg-mainpagecontent {
