@@ -1,22 +1,20 @@
-uuid: 26798f16-5c88-4979-b17a-2f3532566dc7
+uuid: eb92ce09-48bb-4ba0-89c3-b7d590224ff3
 langcode: de
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: rDR2BOewa2UFH9yG4tVvrGxEVv8U7LQo-RLkJhFpERs
 name: large
-label: 'Groß (480x480)'
+label: 'Gross (900)'
 effects:
-  ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d:
-    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
+  cb8cdcd4-ef11-4ffb-8c06-4e22cc6bbea7:
+    uuid: cb8cdcd4-ef11-4ffb-8c06-4e22cc6bbea7
     id: image_scale
-    weight: 0
+    weight: 1
     data:
-      width: 480
-      height: 480
+      width: 900
+      height: null
       upscale: false
-  6e8fe467-84c1-4ef0-a73b-7eccf1cc20e8:
-    uuid: 6e8fe467-84c1-4ef0-a73b-7eccf1cc20e8
+  e83d4252-5249-4533-8686-a02ca58d5ef9:
+    uuid: e83d4252-5249-4533-8686-a02ca58d5ef9
     id: image_convert
     weight: 2
     data:

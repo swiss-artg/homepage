@@ -1,0 +1,23 @@
+uuid: f8b42757-7dce-4038-8fce-692a471b537e
+langcode: de
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.medium
+    - image.style.small
+id: default
+label: Default
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: "300px\r\n600px\r\n900px"
+      sizes_image_styles:
+        - large
+        - medium
+        - small
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: small
