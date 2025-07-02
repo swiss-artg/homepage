@@ -1,0 +1,16 @@
+uuid: 8ca23cf8-6501-40df-ba34-fb9618f7c1e2
+langcode: de
+status: true
+dependencies:
+  module:
+    - redirect
+  enforced:
+    module:
+      - redirect
+_core:
+  default_config_hash: vcnRZRvBqTbK3nZ2M4_lKPlEGc8GjPzgaqapYUfyX8M
+id: redirect_delete_action
+label: 'Weiterleitung löschen'
+type: redirect
+plugin: redirect_delete_action
+configuration: {  }
