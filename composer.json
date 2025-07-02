@@ -22,6 +22,7 @@
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
+        "drupal/filefield_paths": "^1.0@beta",
         "drupal/layout_paragraphs": "^2.1",
         "drupal/migrate_plus": "^6.0",
         "drupal/migrate_tools": "^6.0",
