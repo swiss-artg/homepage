@@ -4,9 +4,7 @@
  * Theme override to display a single page.
  */
 #}
-<header role="banner">
-  {{ page.header }}
-</header>
+{{ page.header }}
 
 {{ page.breadcrumb }}
 
@@ -26,8 +24,4 @@
   </div>{# /.layout-content #}
 </main>
 
-{% if page.footer %}
-  <footer role="contentinfo">
-    {{ page.footer }}
-  </footer>
-{% endif %}
+{{ page.footer }}

@@ -2,3 +2,7 @@ body {
   margin: 0 auto calc(var(--spacing) * 2);
   max-width: 1200px;
 }
+
+.region-footer {
+  padding: var(--spacing);
+}

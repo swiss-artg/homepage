@@ -1,8 +1,3 @@
-header,
-footer[role=contentinfo] {
-  background-color: #ffee00;
-}
-
 #block-swissartg-branding img,
 #block-swissartg-lochstreifen img {
   width: 100%;
@@ -110,10 +105,6 @@ main {
 
 #block-swissartg-mainpagecontent article footer time:last-child {
   border-right: 0;
-}
-
-footer[role=contentinfo] {
-  padding: 15px;
 }
 
 a {
