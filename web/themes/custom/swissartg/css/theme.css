@@ -1,6 +1,10 @@
 body {
   background-color: var(--color-gray-light);
+}
+
+#page-layout {
   box-shadow: 0 calc(var(--spacing) / 2) var(--spacing) 0 var(--color-gray-medium);
+  background-color: var(--color-yellow-pale);
 }
 
 .region-header,

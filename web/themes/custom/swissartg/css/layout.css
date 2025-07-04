@@ -1,8 +1,55 @@
-body {
+#page-layout {
   margin: 0 auto calc(var(--spacing) * 2);
   max-width: 1200px;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "breadcrumb"
+    "help"
+    "menu"
+    "content"
+    "footer";
+}
+
+@media screen and (min-width: 600px) {
+  #page-layout {
+    grid-template-columns: calc(14em + var(--spacing) * 2) auto;
+    grid-template-areas:
+    "header header"
+    "breadcrumb breadcrumb"
+    "menu help"
+    "menu content"
+    "footer footer";
+  }
+}
+
+.region-header {
+  grid-area: header;
+}
+
+.region-breadcrumb {
+  grid-area: breadcrumb;
+  padding: calc(var(--spacing) * 0.5) var(--spacing);
+}
+
+.region-help {
+  grid-area: help;
+}
+
+.region-menu {
+  grid-area: menu;
+  padding: var(--spacing);
+}
+
+.region-content {
+  grid-area: content;
+  padding: var(--spacing);
 }
 
 .region-footer {
+  grid-area: footer;
   padding: var(--spacing);
 }

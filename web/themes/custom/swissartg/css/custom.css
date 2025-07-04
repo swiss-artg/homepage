@@ -4,12 +4,6 @@
   height: auto;
 }
 
-main {
-  background-color: #ffffa2;
-  display: flex;
-  flex-flow: wrap;
-}
-
 .menu {
   flex: 1 1;
   max-width: 14em;
@@ -39,12 +33,6 @@ main {
 .menu li a.is-active {
   color: #000000;
   font-weight: bold;
-}
-
-.layout-content {
-  padding: 4px 25px 50px;
-  flex: 3 3;
-  min-width: 18em;
 }
 
 #block-swissartg-mainpagecontent {

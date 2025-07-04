@@ -4,24 +4,18 @@
  * Theme override to display a single page.
  */
 #}
-{{ page.header }}
+<div id="page-layout">
+  {{ page.header }}
 
-{{ page.breadcrumb }}
+  {{ page.breadcrumb }}
 
-{{ page.highlighted }}
+  {{ page.highlighted }}
 
-{{ page.help }}
+  {{ page.help }}
 
-<main role="main">
-  <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+  {{ page.menu }}
 
-  <aside class="menu" role="complementary">
-    {{ page.menu }}
-  </aside>
+  {{ page.content }}
 
-  <div class="layout-content">
-    {{ page.content }}
-  </div>{# /.layout-content #}
-</main>
-
-{{ page.footer }}
+  {{ page.footer }}
+</div>
