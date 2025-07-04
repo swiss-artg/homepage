@@ -15,9 +15,28 @@ matchers:
     uuid: 556010a3-e317-48b3-b4ed-854c10f4b950
     settings:
       metadata: '[node:content-type:name] #[node:nid] | [node:created:medium] by [node:author]'
-      bundles: {  }
-      group_by_bundle: false
+      bundles:
+        news: news
+        news_migrated: news_migrated
+        page: page
+      group_by_bundle: true
       substitution_type: canonical
       limit: 100
       include_unpublished: false
-    weight: 0
+    weight: -10
+  8f520f43-d87d-4017-9935-8d4fe4c02ffd:
+    id: 'entity:media'
+    uuid: 8f520f43-d87d-4017-9935-8d4fe4c02ffd
+    settings:
+      metadata: Dateien
+      bundles:
+        file: file
+      group_by_bundle: false
+      substitution_type: media
+      limit: 100
+    weight: -9
+  e9c6ef9f-06bf-4d0a-adf6-9ffbb8a7d090:
+    id: external
+    uuid: e9c6ef9f-06bf-4d0a-adf6-9ffbb8a7d090
+    settings: {  }
+    weight: -8

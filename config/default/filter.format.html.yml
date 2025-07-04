@@ -1,7 +1,9 @@
 uuid: fe079bc8-20f2-491d-92b9-ff9dc58cadc6
 langcode: de
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - linkit
 name: 'Einfache Formatierung'
 format: html
 weight: 0
@@ -18,7 +20,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <p> <h2> <h3> <strong> <em> <sub> <sup> <a href> <ul> <ol reversed> <li>'
+      allowed_html: '<br> <p> <h2> <h3> <strong> <em> <sub> <sup> <a href data-entity-type data-entity-uuid data-entity-substitution> <ul> <ol reversed> <li>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_htmlcorrector:
@@ -34,3 +36,10 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true
