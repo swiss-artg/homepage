@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c72a7f301c87f51f62dcce2f8103370",
+    "content-hash": "2a7c000ce2c3f43239b54df5ba8a2fb3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1959,6 +1959,65 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/layout_paragraphs",
                 "issues": "https://www.drupal.org/project/issues/layout_paragraphs"
+            }
+        },
+        {
+            "name": "drupal/linkit",
+            "version": "7.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/linkit.git",
+                "reference": "7.0.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/linkit-7.0.5.zip",
+                "reference": "7.0.5",
+                "shasum": "58baf9f76c46c73e02639ac79857889c52c46113"
+            },
+            "require": {
+                "drupal/core": "^10.1 || ^11"
+            },
+            "require-dev": {
+                "drupal/ckeditor": "*",
+                "drupal/imce": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "7.0.5",
+                    "datestamp": "1750458295",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Emil Stjerneman",
+                    "homepage": "https://stjerneman.com",
+                    "email": "emil@stjerneman.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "johnwebdev",
+                    "homepage": "https://www.drupal.org/user/3331569"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                }
+            ],
+            "description": "Linkit - Enriched linking experience",
+            "homepage": "http://drupal.org/project/linkit",
+            "support": {
+                "source": "http://cgit.drupalcode.org/linkit",
+                "issues": "http://drupal.org/project/linkit"
             }
         },
         {
