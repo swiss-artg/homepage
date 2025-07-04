@@ -4,37 +4,6 @@
   height: auto;
 }
 
-.menu {
-  flex: 1 1;
-  max-width: 14em;
-  min-width: 12em;
-}
-
-.menu ul {
-  list-style: none;
-  padding-left: 25px;
-}
-
-.menu li ul {
-  padding-left: 10px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.menu li {
-  margin: 2px 0px;
-  background-color: #ffee00;
-}
-
-.menu li a {
-  padding: 7px 0px;
-}
-
-.menu li a.is-active {
-  color: #000000;
-  font-weight: bold;
-}
-
 #block-swissartg-mainpagecontent {
   background-color: #EEEEEE;
   box-shadow: 1px 2px 4px rgba(0,0,0, .5);
