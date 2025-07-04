@@ -1,0 +1,25 @@
+.region-breadcrumb {
+  --color: #e0e1e9;
+  --border: calc(var(--spacing) * 0.1) solid hsl(from var(--color) h s 80%);
+  border-top: var(--border);
+  border-bottom: var(--border);
+  background-color: var(--color);
+  padding: calc(var(--spacing) * 0.5) var(--spacing);
+}
+
+.region-breadcrumb ol {
+  list-style: none;
+  list-style-position: outside;
+  padding: 0;
+  margin: 0;
+}
+
+.region-breadcrumb li {
+  color: hsl(from var(--color) h s 50%);
+  display: inline-block;
+  margin-right: calc(var(--spacing) * 0.5);
+}
+
+.region-breadcrumb a {
+  color: hsl(from var(--color) h s 25%);
+}

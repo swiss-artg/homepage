@@ -4,33 +4,6 @@
   height: auto;
 }
 
-#block-swissartg-breadcrumbs {
-  border-top: 1px solid #d0d1d7;
-  border-bottom: 1px solid #d0d1d7;
-  background-color: #e0e1e9;
-  padding: 1px 25px 0;
-  height: 21px;
-}
-
-#block-swissartg-breadcrumbs ol {
-  display: inline;
-  list-style: none;
-  list-style-position: outside;
-  padding: 0px;
-  margin: 0px;
-}
-
-#block-swissartg-breadcrumbs li {
-  color: black;
-  float: left;
-  padding-top: 2px;
-  padding-right: 5px;
-}
-
-#block-swissartg-breadcrumbs a {
-  color: #85858a;
-}
-
 main {
   background-color: #ffffa2;
   display: flex;

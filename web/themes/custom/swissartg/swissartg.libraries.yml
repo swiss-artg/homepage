@@ -5,6 +5,8 @@ global-styling:
       css/variables.css: {}
     layout:
       css/layout.css: {}
+    component:
+      css/breadcrumb.css: {}
     theme:
       css/custom.css: {}
       css/theme.css: {}
