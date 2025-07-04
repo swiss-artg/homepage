@@ -1,8 +1,13 @@
 global-styling:
   version: VERSION
   css:
+    base:
+      css/variables.css: {}
+    layout:
+      css/layout.css: {}
     theme:
       css/custom.css: {}
+      css/theme.css: {}
 
 modern-normalize:
   version: VERSION
