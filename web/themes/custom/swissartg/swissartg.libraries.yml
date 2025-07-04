@@ -1,5 +1,11 @@
 global-styling:
   version: VERSION
   css:
-    base:
+    theme:
       css/custom.css: {}
+
+modern-normalize:
+  version: VERSION
+  css:
+    base:
+      node_modules/modern-normalize/modern-normalize.css: {}
