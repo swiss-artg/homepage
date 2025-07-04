@@ -1,0 +1,19 @@
+#block-swissartg-tabs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#block-swissartg-tabs li {
+  display: inline-block;
+
+  border-top-left-radius: calc(var(--spacing) * 0.5);
+  border-top-right-radius: calc(var(--spacing) * 0.5);
+  border: calc(var(--spacing) * 0.1) solid hsl(from var(--color-gray-light) h s 80%);
+  border-bottom: none;
+
+  background: var(--color-gray-light);
+
+  padding: calc(var(--spacing) * 0.5) var(--spacing);
+}
+
