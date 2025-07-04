@@ -26,13 +26,16 @@
   }
 }
 
+.region {
+  padding: calc(var(--spacing) * 0.5) var(--spacing);
+}
+
 .region-header {
   grid-area: header;
 }
 
 .region-breadcrumb {
   grid-area: breadcrumb;
-  padding: calc(var(--spacing) * 0.5) var(--spacing);
 }
 
 .region-help {
@@ -41,15 +44,12 @@
 
 .region-menu {
   grid-area: menu;
-  padding: var(--spacing);
 }
 
 .region-content {
   grid-area: content;
-  padding: var(--spacing);
 }
 
 .region-footer {
   grid-area: footer;
-  padding: var(--spacing);
 }

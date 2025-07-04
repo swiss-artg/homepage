@@ -4,7 +4,7 @@
 
 .region-menu ul {
   list-style: none;
-  margin: calc(var(--spacing) * -0.5);
+  margin: 0 calc(var(--spacing) * -0.5);
   padding: 0;
 }
 
