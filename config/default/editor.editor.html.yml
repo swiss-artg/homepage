@@ -21,7 +21,11 @@ settings:
       - link
       - '|'
       - specialCharacters
+      - '|'
+      - undo
+      - redo
       - removeFormat
+      - showBlocks
   plugins:
     ckeditor5_heading:
       enabled_headings:
