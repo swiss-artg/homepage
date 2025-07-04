@@ -7,6 +7,15 @@ body {
   background-color: var(--color-yellow-pale);
 }
 
+.region-content article {
+  background-color: var(--color-gray-light);
+  box-shadow:
+    calc(var(--spacing) * 0.1)
+    calc(var(--spacing) * 0.2)
+    calc(var(--spacing) * 0.4)
+    var(--color-gray-medium);
+}
+
 .region-header,
 .region-footer {
   background-color: var(--color-yellow-bright);

@@ -50,6 +50,11 @@
   grid-area: content;
 }
 
+.region-content article {
+  padding: calc(var(--spacing) * 0.5) var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
 .region-footer {
   grid-area: footer;
 }
