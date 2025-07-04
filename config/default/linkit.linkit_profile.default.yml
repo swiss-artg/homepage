@@ -1,0 +1,42 @@
+uuid: c858cfc3-fa50-4666-955a-efbcff5917b7
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 0Jw_BFJCCtWk187tIYvME58VFpYwPaAdrc4eRtAyHH0
+label: Standard
+id: default
+description: 'A default Linkit profile'
+matchers:
+  556010a3-e317-48b3-b4ed-854c10f4b950:
+    id: 'entity:node'
+    uuid: 556010a3-e317-48b3-b4ed-854c10f4b950
+    settings:
+      metadata: '[node:content-type:name] #[node:nid] | [node:created:medium] by [node:author]'
+      bundles:
+        news: news
+        news_migrated: news_migrated
+        page: page
+      group_by_bundle: true
+      substitution_type: canonical
+      limit: 100
+      include_unpublished: false
+    weight: -10
+  8f520f43-d87d-4017-9935-8d4fe4c02ffd:
+    id: 'entity:media'
+    uuid: 8f520f43-d87d-4017-9935-8d4fe4c02ffd
+    settings:
+      metadata: Dateien
+      bundles:
+        file: file
+      group_by_bundle: false
+      substitution_type: media
+      limit: 100
+    weight: -9
+  e9c6ef9f-06bf-4d0a-adf6-9ffbb8a7d090:
+    id: external
+    uuid: e9c6ef9f-06bf-4d0a-adf6-9ffbb8a7d090
+    settings: {  }
+    weight: -8
