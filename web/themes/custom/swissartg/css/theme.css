@@ -20,3 +20,12 @@ body {
 .region-footer {
   background-color: var(--color-yellow-bright);
 }
+
+a {
+  text-decoration: none;
+  color: #335f8d;
+}
+
+a:hover {
+  color: #ff8400;
+}
