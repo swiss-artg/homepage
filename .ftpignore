@@ -6,9 +6,12 @@
 .ftp*
 .git*
 .git*/**
+/node_modules/
 DOCKER*
 composer.*
 docker*
+package-lock.json
+package.json
 web/*lint*
 web/sites/*/files/
 web/sites/*/settings.*.php
