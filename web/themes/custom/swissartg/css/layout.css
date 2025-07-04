@@ -1,5 +1,5 @@
 #page-layout {
-  margin: 0 auto calc(var(--spacing) * 2);
+  margin: 0 auto;
   max-width: 1200px;
 
   display: grid;
@@ -12,6 +12,12 @@
     "menu"
     "content"
     "footer";
+}
+
+@media screen and (min-width: 1200px) {
+  #page-layout {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
 }
 
 @media screen and (min-width: 600px) {
