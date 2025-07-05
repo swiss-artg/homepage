@@ -3,6 +3,9 @@
 /web/core
 /web/modules/contrib/
 
+# Ignore npm managed dependencies
+node_modules
+
 # Ignore configuration files that may contain sensitive information.
 /web/sites/*/settings.*.php
 /web/sites/*/services.*.yml

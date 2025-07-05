@@ -14,6 +14,7 @@ regions:
 
 libraries:
   - swissartg/global-styling
+  - swissartg/modern-normalize
 
 libraries-override:
   layout_discovery/twocol:

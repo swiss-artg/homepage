@@ -59,6 +59,9 @@ jobs:
         with:
           args: --no-dev --ignore-platform-reqs
 
+      - name: NPM install
+        run: npm install
+
       - name: Download from remote
         if: steps.remote.outputs.cache-matched-key == ''
         run: |

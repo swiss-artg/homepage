@@ -2,4 +2,18 @@ global-styling:
   version: VERSION
   css:
     base:
-      css/custom.css: {}
+      css/variables.css: {}
+    layout:
+      css/layout.css: {}
+    component:
+      css/breadcrumb.css: {}
+      css/menu-local-tasks.css: {}
+      css/menu.css: {}
+    theme:
+      css/theme.css: {}
+
+modern-normalize:
+  version: VERSION
+  css:
+    base:
+      node_modules/modern-normalize/modern-normalize.css: {}
