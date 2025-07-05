@@ -1,9 +1,9 @@
 uuid: 28160b3c-ba6c-4441-95c2-bff35dacd63d
 langcode: de
 status: true
-dependencies: {}
+dependencies: {  }
 name: small
-label: "Klein (300)"
+label: 'Klein (300)'
 effects:
   bddf0d06-42f9-4c75-a700-a33cafa25ea0:
     uuid: bddf0d06-42f9-4c75-a700-a33cafa25ea0

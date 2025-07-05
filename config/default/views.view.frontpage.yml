@@ -358,10 +358,9 @@ display:
       menu:
         type: normal
         title: 'SWISS-ARTG HB9AK'
-        description: null
+        description: ''
         weight: 0
-        enabled: true
-        expanded: false
+        expanded: true
         menu_name: main
         parent: ''
         context: '0'
