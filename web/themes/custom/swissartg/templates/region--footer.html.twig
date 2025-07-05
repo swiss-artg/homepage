@@ -1,5 +1,5 @@
 {% if content %}
-  <footer{{ attributes.addClass(['region', 'region-footer']).setAttribute('role', 'contentinfo') }}>
+  <footer{{ attributes.addClass('region').setAttribute('id', 'region-footer').setAttribute('role', 'contentinfo') }}>
     {{ content }}
   </footer>
 {% endif %}

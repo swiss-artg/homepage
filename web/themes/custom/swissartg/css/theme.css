@@ -7,7 +7,7 @@ body {
   background-color: var(--color-yellow-pale);
 }
 
-.region-content article {
+#region-content article {
   background-color: var(--color-gray-light);
   box-shadow:
     calc(var(--spacing) * 0.1)
@@ -16,8 +16,8 @@ body {
     var(--color-gray-medium);
 }
 
-.region-header,
-.region-footer {
+#region-header,
+#region-footer {
   background-color: var(--color-yellow-bright);
 }
 

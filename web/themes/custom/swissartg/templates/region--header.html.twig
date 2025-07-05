@@ -1,5 +1,5 @@
 {% if content %}
-  <header{{ attributes.addClass(['region', 'region-header']).setAttribute('role', 'banner') }}>
+  <header{{ attributes.addClass('region').setAttribute('id', 'region-header').setAttribute('role', 'banner') }}>
     {{ content }}
   </header>
 {% endif %}

@@ -36,32 +36,32 @@
   padding: calc(var(--spacing) * 0.5) var(--spacing);
 }
 
-.region-header {
+#region-header {
   grid-area: header;
 }
 
-.region-breadcrumb {
+#region-breadcrumb {
   grid-area: breadcrumb;
 }
 
-.region-help {
+#region-help {
   grid-area: help;
 }
 
-.region-menu {
+#region-menu {
   grid-area: menu;
 }
 
-.region-content {
+#region-content {
   grid-area: content;
 }
 
-.region-content article {
+#region-content article {
   padding: calc(var(--spacing) * 0.5) var(--spacing);
   margin-bottom: var(--spacing);
 }
 
-.region-footer {
+#region-footer {
   grid-area: footer;
 }
 

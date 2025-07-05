@@ -1,33 +1,33 @@
-.region-menu nav {
+#region-menu nav {
   margin-bottom: calc(var(--spacing) * 2);
 }
 
-.region-menu ul {
+#region-menu ul {
   list-style: none;
   margin: 0 calc(var(--spacing) * -0.5);
   padding: 0;
 }
 
-.region-menu li ul {
+#region-menu li ul {
   padding-left: calc(var(--spacing) * 0.875);
   margin: calc(var(--spacing) * 0.5) 0;
 }
 
-.region-menu li {
+#region-menu li {
   margin-bottom: calc(var(--spacing) * 0.25);
   padding: calc(var(--spacing) * 0.125) calc(var(--spacing) * 0.5);
   background-color: var(--color-yellow-bright);
 }
 
-.region-menu li ul li {
+#region-menu li ul li {
   padding-right: 0;
 }
 
-.region-menu li:last-of-type {
+#region-menu li:last-of-type {
   margin-bottom: 0;
 }
 
-.region-menu li a.is-active {
+#region-menu li a.is-active {
   color: #000000;
   font-weight: bold;
 }

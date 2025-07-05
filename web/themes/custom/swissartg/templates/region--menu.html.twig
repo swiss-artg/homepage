@@ -1,5 +1,5 @@
 {% if content %}
-  <aside{{ attributes.addClass(['region', 'region-menu']).setAttribute('role', 'complementary') }}>
+  <aside{{ attributes.addClass('region').setAttribute('id', 'region-menu').setAttribute('role', 'complementary') }}>
     {{ content }}
   </aside>
 {% endif %}
