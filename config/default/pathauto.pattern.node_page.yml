@@ -1,0 +1,22 @@
+uuid: ff6a2e37-1641-4a2b-91c9-87308be903d2
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: node_page
+label: Seiten
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  25fafe06-a760-405f-bbf5-aeb13f1423e4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 25fafe06-a760-405f-bbf5-aeb13f1423e4
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }
