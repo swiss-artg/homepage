@@ -1,7 +1,7 @@
 _core:
   default_config_hash: TA0Gr1ENpR0kj3J9ZK4M04nzYU5Ou5xPsas2_StoIMU
 langcode: de
-applies_admin_routes: true
+applies_admin_routes: false
 include_invalid_paths: false
 excluded_paths: ''
 replaced_titles: ''
@@ -13,15 +13,15 @@ home_segment_keep: false
 include_title_segment: true
 title_from_page_when_available: true
 title_segment_as_link: false
-use_menu_title_as_fallback: false
+use_menu_title_as_fallback: true
 use_page_title_as_menu_title_fallback: false
-menu_title_preferred_menu: ''
+menu_title_preferred_menu: main
 remove_repeated_segments: true
 language_path_prefix_as_segment: false
 absolute_paths: false
 hide_single_home_item: false
 term_hierarchy: false
-use_site_title: false
+use_site_title: true
 add_structured_data_json_ld: false
 capitalizator_mode: ucwords
 capitalizator_ignored_words:
