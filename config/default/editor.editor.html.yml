@@ -49,6 +49,9 @@ settings:
         -
           label: Rechtsbündig
           element: '<table class="right">'
+        -
+          label: Gerahmt
+          element: '<table class="border">'
     linkit_extension:
       linkit_enabled: true
       linkit_profile: default
