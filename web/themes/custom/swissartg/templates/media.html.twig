@@ -1,0 +1,6 @@
+{%
+  set media_class = ('media-' ~ media.bundle() ~ (view_mode != 'default' ? '-' ~ view_mode))|clean_class
+%}
+<div{{ attributes.addClass(media_class) }}>
+  {{ content }}
+</div>

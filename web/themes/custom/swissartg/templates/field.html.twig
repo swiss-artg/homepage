@@ -1,0 +1,36 @@
+{% if view_mode == '_custom' %}
+  {% set element = 'field-' ~ field_name|replace({'__': '-'})|clean_class %}
+  {% set element_prefix = element ~ '__' %}
+{% else %}
+  {% set element = (entity_type ~ '-' ~ bundle ~ (view_mode != 'default' ? '-' ~ view_mode))|clean_class ~ '__' ~ field_name|replace({(bundle ~ '__'): ''})|clean_class %}
+{% endif %}
+{% set element_prefix = element_prefix ?: element ~ '-' %}
+{% set classes = classes ?: [ element ] %}
+{%
+  set title_classes = [
+    element_prefix ~ 'label',
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {% if not label_hidden %}
+    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+  {% endif %}
+  {% set content_attributes_not_empty -%}{{ content_attributes }}{%- endset %}
+  {% if (multiple and not label_hidden) or content_attributes_not_empty %}
+    <div{{ content_attributes.addClass(element_prefix ~ 'items') }}>
+  {% endif %}
+  {% for item in items %}
+    {% set item_attributes_not_empty -%}{{ item.attributes }}{%- endset %}
+    {% if multiple or item_attributes_not_empty %}
+      <div{{ item.attributes.addClass(element_prefix ~ 'item') }}>
+    {% endif -%}
+    {{- item.content -}}
+    {% if multiple or item_attributes_not_empty %}
+      </div>
+    {% endif -%}
+  {% endfor %}
+  {% if (multiple and not label_hidden) or content_attributes_not_empty %}
+    </div>
+  {% endif %}
+</div>

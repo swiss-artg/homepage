@@ -1,0 +1,8 @@
+<?php
+
+function swissartg_preprocess_field(&$variables) : void {
+  $element = $variables['element'];
+
+  $variables['bundle'] = $element['#bundle'];
+  $variables['view_mode'] = $element['#view_mode'];
+}
