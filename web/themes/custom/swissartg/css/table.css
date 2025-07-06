@@ -1,0 +1,68 @@
+table {
+  --table-spacing: calc(var(--spacing) * 0.5);
+  border-spacing: 0;
+  margin-top: var(--table-spacing);
+  margin-bottom: var(--table-spacing);
+}
+
+table.left {
+  margin-right: auto;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.right {
+  margin-left: auto;
+}
+
+caption {
+  padding: var(--table-spacing) 0;
+  font-weight: bold;
+}
+
+th {
+  background: var(--color-gray-dark);
+}
+
+td, th {
+  padding: var(--table-spacing);
+  border: 0;
+}
+
+td:first-child {
+  padding-left: 0;
+}
+
+td:last-child {
+  padding-right: 0;
+}
+
+tbody th {
+  text-align: right;
+}
+
+table.border {
+  --border: calc(var(--spacing) * 0.05) solid hsl(from var(--color-gray-dark) h s 80%);
+  border: var(--border);
+}
+
+table.border td,
+table.border td,
+table.border th,
+table.border th,
+table.border td:first-child,
+table.border td:last-child {
+  padding: var(--table-spacing);
+  border: var(--border);
+}
+
+table.zebra tr:nth-child(even) {
+  background: hsl(from var(--color-gray-dark) 25 s 86%);
+}
+
+table.spacious {
+  --table-spacing: var(--spacing);
+}

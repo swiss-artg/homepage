@@ -3,6 +3,7 @@
   /* Base dimension to controll the layouts density */
   --spacing: 1em;
 
+  --color-gray-dark: #e0e1e9;
   --color-gray-light: rgb(246, 246, 246);
   --color-gray-medium: #aaa;
   --color-yellow-bright: #ffee00;
