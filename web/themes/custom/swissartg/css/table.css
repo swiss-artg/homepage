@@ -1,0 +1,29 @@
+table {
+  border-spacing: 0;
+}
+
+caption {
+  padding: calc(var(--spacing) * 0.5) 0;
+  font-weight: bold;
+}
+
+th {
+  background: #e0e1e9;
+}
+
+td, th {
+  padding: calc(var(--spacing) * 0.5);
+  border: 0;
+}
+
+td:first-child {
+  padding-left: 0;
+}
+
+td:last-child {
+  padding-right: 0;
+}
+
+tbody th {
+  text-align: right;
+}

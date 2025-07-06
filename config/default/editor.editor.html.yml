@@ -20,6 +20,7 @@ settings:
       - numberedList
       - link
       - '|'
+      - insertTable
       - specialCharacters
       - '|'
       - undo
