@@ -1,0 +1,23 @@
+uuid: dedc1cc6-007e-4355-ad72-b9e6e9463eef
+langcode: de
+status: true
+dependencies:
+  config:
+    - image.style.thumbnail_large
+    - image.style.thumbnail_medium
+    - image.style.thumbnail_small
+id: thumbnail
+label: Vorschau
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: "50px\r\n100px\r\n200px"
+      sizes_image_styles:
+        - thumbnail_large
+        - thumbnail_medium
+        - thumbnail_small
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: thumbnail_small

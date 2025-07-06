@@ -1,0 +1,21 @@
+uuid: 21fa116a-16c9-4043-98c6-778d893f51d4
+langcode: de
+status: true
+dependencies: {  }
+name: thumbnail_large
+label: 'Vorschau Gross (200x200)'
+effects:
+  b32dd093-9798-4f94-a1e6-777f729c1277:
+    uuid: b32dd093-9798-4f94-a1e6-777f729c1277
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center
+  97259476-cecc-485b-b2ee-022e8f1edf7e:
+    uuid: 97259476-cecc-485b-b2ee-022e8f1edf7e
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
