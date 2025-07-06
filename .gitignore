@@ -2,6 +2,7 @@
 /vendor/
 /web/core
 /web/modules/contrib/
+/web/libraries/
 
 # Ignore npm managed dependencies
 node_modules
