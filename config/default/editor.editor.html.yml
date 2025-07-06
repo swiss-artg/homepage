@@ -19,6 +19,7 @@ settings:
       - bulletedList
       - numberedList
       - link
+      - style
       - '|'
       - insertTable
       - specialCharacters
@@ -37,6 +38,17 @@ settings:
         reversed: true
         startIndex: false
       multiBlock: true
+    ckeditor5_style:
+      styles:
+        -
+          label: Linksbündig
+          element: '<table class="left">'
+        -
+          label: Zentriert
+          element: '<table class="center">'
+        -
+          label: Rechtsbündig
+          element: '<table class="right">'
     linkit_extension:
       linkit_enabled: true
       linkit_profile: default
