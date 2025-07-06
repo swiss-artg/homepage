@@ -1,0 +1,13 @@
+.paragraph-audio__field-audio-item .media-audio {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.media-audio__name {
+  font-weight: bold;
+}
+
+.paragraph-audio__field-audio-item {
+  margin-bottom: calc(var(--spacing) * 0.5)
+}

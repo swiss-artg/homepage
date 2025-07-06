@@ -9,6 +9,7 @@ global-styling:
       css/breadcrumb.css: {}
       css/menu-local-tasks.css: {}
       css/menu.css: {}
+      css/paragraph.css: {}
       css/table.css: {}
     theme:
       css/theme.css: {}
