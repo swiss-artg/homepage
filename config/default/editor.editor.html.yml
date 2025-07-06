@@ -55,6 +55,9 @@ settings:
         -
           label: Zebrastreifen
           element: '<table class="zebra">'
+        -
+          label: Grosszügig
+          element: '<table class="spacious">'
     linkit_extension:
       linkit_enabled: true
       linkit_profile: default

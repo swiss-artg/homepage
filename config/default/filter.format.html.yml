@@ -20,7 +20,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <p> <h2> <h3> <table class="left center right border zebra"> <strong> <em> <sub> <sup> <a href data-entity-type data-entity-uuid data-entity-substitution> <ul> <ol reversed> <li> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
+      allowed_html: '<br> <p> <h2> <h3> <table class="left center right border zebra spacious"> <strong> <em> <sub> <sup> <a href data-entity-type data-entity-uuid data-entity-substitution> <ul> <ol reversed> <li> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_htmlcorrector:

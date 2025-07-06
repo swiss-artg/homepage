@@ -1,7 +1,8 @@
 table {
+  --table-spacing: calc(var(--spacing) * 0.5);
   border-spacing: 0;
-  margin-top: calc(var(--spacing) * 0.5);
-  margin-bottom: calc(var(--spacing) * 0.5);
+  margin-top: var(--table-spacing);
+  margin-bottom: var(--table-spacing);
 }
 
 table.left {
@@ -18,7 +19,7 @@ table.right {
 }
 
 caption {
-  padding: calc(var(--spacing) * 0.5) 0;
+  padding: var(--table-spacing) 0;
   font-weight: bold;
 }
 
@@ -27,7 +28,7 @@ th {
 }
 
 td, th {
-  padding: calc(var(--spacing) * 0.5);
+  padding: var(--table-spacing);
   border: 0;
 }
 
@@ -54,10 +55,14 @@ table.border th,
 table.border th,
 table.border td:first-child,
 table.border td:last-child {
-  padding: calc(var(--spacing) * 0.5);
+  padding: var(--table-spacing);
   border: var(--border);
 }
 
 table.zebra tr:nth-child(even) {
   background: hsl(from #e0e1e9 25 s 86%);
+}
+
+table.spacious {
+  --table-spacing: var(--spacing);
 }
