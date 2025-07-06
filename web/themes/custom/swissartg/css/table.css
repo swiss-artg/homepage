@@ -57,3 +57,7 @@ table.border td:last-child {
   padding: calc(var(--spacing) * 0.5);
   border: var(--border);
 }
+
+table.zebra tr:nth-child(even) {
+  background: hsl(from #e0e1e9 25 s 86%);
+}
