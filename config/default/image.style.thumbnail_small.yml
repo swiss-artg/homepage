@@ -1,0 +1,21 @@
+uuid: 1ecf65f9-f5b9-48b6-8fb4-9190faff2094
+langcode: de
+status: true
+dependencies: {  }
+name: thumbnail_small
+label: 'Vorschau Klein (50x50)'
+effects:
+  f799edef-cf68-4a3f-9c84-d2ccfcf39650:
+    uuid: f799edef-cf68-4a3f-9c84-d2ccfcf39650
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      anchor: center-center
+  b1661adc-5464-4070-b292-7cc7ac81ba4f:
+    uuid: b1661adc-5464-4070-b292-7cc7ac81ba4f
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

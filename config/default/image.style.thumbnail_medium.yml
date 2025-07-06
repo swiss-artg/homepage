@@ -1,0 +1,21 @@
+uuid: 05fc7c91-af7e-4768-b69b-826194c7e856
+langcode: de
+status: true
+dependencies: {  }
+name: thumbnail_medium
+label: 'Vorschau Mittel (100x100)'
+effects:
+  2e38771d-e7f2-499a-be25-a0024168ed1b:
+    uuid: 2e38771d-e7f2-499a-be25-a0024168ed1b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 100
+      anchor: center-center
+  57f69ce2-6463-4fad-969a-7855f0b8c284:
+    uuid: 57f69ce2-6463-4fad-969a-7855f0b8c284
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

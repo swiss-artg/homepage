@@ -1,0 +1,31 @@
+uuid: 17a9d250-3a35-4734-9ac9-86388c8ea10a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.gallery
+    - responsive_image.styles.thumbnail
+  module:
+    - photoswipe
+id: paragraph.gallery.default
+targetEntityType: paragraph
+bundle: gallery
+mode: default
+content:
+  field_image:
+    type: photoswipe_responsive_field_formatter
+    label: hidden
+    settings:
+      photoswipe_thumbnail_style_first: ''
+      photoswipe_thumbnail_style: thumbnail
+      photoswipe_image_style: ''
+      photoswipe_reference_image_field: field_media_image
+      photoswipe_view_mode: default
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
