@@ -24,7 +24,7 @@ caption {
 }
 
 th {
-  background: #e0e1e9;
+  background: var(--color-gray-dark);
 }
 
 td, th {
@@ -45,7 +45,7 @@ tbody th {
 }
 
 table.border {
-  --border: calc(var(--spacing) * 0.05) solid hsl(from #e0e1e9 h s 80%);
+  --border: calc(var(--spacing) * 0.05) solid hsl(from var(--color-gray-dark) h s 80%);
   border: var(--border);
 }
 
@@ -60,7 +60,7 @@ table.border td:last-child {
 }
 
 table.zebra tr:nth-child(even) {
-  background: hsl(from #e0e1e9 25 s 86%);
+  background: hsl(from var(--color-gray-dark) 25 s 86%);
 }
 
 table.spacious {
