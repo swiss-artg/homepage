@@ -1,0 +1,46 @@
+uuid: 1c091431-0365-49e0-8569-dc11c1f0111b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file
+    - media.type.audio
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: '[date:custom:Y]-[date:custom:m]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    file_name:
+      value: '[media:name].[file:extension]'
+      options:
+        slashes: false
+        pathauto: true
+        transliterate: false
+    redirect: true
+    retroactive_update: false
+    active_updating: true
+id: media.audio.field_media_file
+field_name: field_media_file
+entity_type: media
+bundle: audio
+label: Audiodatei
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'mp3 wav aac'
+  max_filesize: ''
+  description_field: true
+field_type: file
