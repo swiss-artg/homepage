@@ -1,0 +1,11 @@
+uuid: 68ca377d-1820-48be-a4e6-867bfaa9c277
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.mode
+id: node.mode
+target_entity_type_id: node
+target_bundle: mode
+default_langcode: site_default
+language_alterable: false

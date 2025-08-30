@@ -1,0 +1,22 @@
+uuid: 999d3f4c-62bf-4ab2-b354-d46e33a0c076
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.rig
+id: node.rig.promote
+field_name: promote
+entity_type: node
+bundle: rig
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

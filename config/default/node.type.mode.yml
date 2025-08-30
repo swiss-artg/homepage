@@ -1,0 +1,18 @@
+uuid: 6327856a-fd19-42b8-b9b4-c3d975780a2e
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Betriebsart
+type: mode
+description: 'Eine im Amateurfunk gängige analoge, digitale oder daten Betriebsart.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

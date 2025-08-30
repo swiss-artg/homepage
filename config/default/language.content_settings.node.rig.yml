@@ -1,0 +1,11 @@
+uuid: 53595a1a-fb0e-4562-b851-81b7d641ba5e
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.rig
+id: node.rig
+target_entity_type_id: node
+target_bundle: rig
+default_langcode: site_default
+language_alterable: false
