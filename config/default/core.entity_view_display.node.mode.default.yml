@@ -1,0 +1,31 @@
+uuid: 70797d35-1907-4fb3-acf7-0869071bc26f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.mode.field_body
+    - node.type.mode
+  module:
+    - layout_paragraphs
+    - user
+id: node.mode.default
+targetEntityType: node
+bundle: mode
+mode: default
+content:
+  field_body:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

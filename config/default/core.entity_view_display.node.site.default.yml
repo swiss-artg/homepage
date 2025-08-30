@@ -3,9 +3,11 @@ langcode: de
 status: true
 dependencies:
   config:
+    - field.field.node.site.field_body
     - field.field.node.site.field_rigs
     - node.type.site
   module:
+    - layout_paragraphs
     - user
     - viewsreference
 id: node.site.default
@@ -13,6 +15,15 @@ targetEntityType: node
 bundle: site
 mode: default
 content:
+  field_body:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_rigs:
     type: viewsreference_formatter
     label: above
@@ -22,12 +33,12 @@ content:
         page: '0'
         feed: '0'
     third_party_settings: {  }
-    weight: 101
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   langcode: true

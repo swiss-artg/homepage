@@ -1,22 +1,21 @@
-uuid: 2183c346-b39a-4c0d-92a2-cfeeb686dbd4
+uuid: 39b5abf1-9fca-4daf-97fe-30d4b3b59b04
 langcode: de
 status: true
 dependencies:
   config:
-    - field.field.node.site.field_body
-    - field.field.node.site.field_rigs
-    - node.type.site
+    - field.field.node.mode.field_body
+    - node.type.mode
   module:
     - layout_paragraphs
     - path
-id: node.site.default
+id: node.mode.default
 targetEntityType: node
-bundle: site
+bundle: mode
 mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -34,41 +33,41 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 1
+    weight: 2
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 4
+    weight: 15
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 120
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 5
+    weight: 16
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -76,7 +75,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
@@ -85,9 +84,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 7
+    weight: 50
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_rigs: true
+hidden: {  }

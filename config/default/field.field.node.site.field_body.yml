@@ -1,0 +1,47 @@
+uuid: d070e01d-9e3c-4917-8980-5600e95066d6
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.site
+  module:
+    - entity_reference_revisions
+id: node.site.field_body
+field_name: field_body
+entity_type: node
+bundle: site
+label: Inhalt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 1
+    target_bundles_drag_drop:
+      audio:
+        weight: 8
+        enabled: false
+      download:
+        weight: 9
+        enabled: false
+      gallery:
+        weight: 10
+        enabled: false
+      image:
+        weight: 11
+        enabled: false
+      layout:
+        weight: 12
+        enabled: false
+      text:
+        weight: 2
+        enabled: false
+      view:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions
