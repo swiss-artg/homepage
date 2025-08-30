@@ -1,0 +1,29 @@
+uuid: 04ead81b-4f39-4f8b-870c-3b9e1ae2717d
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.rig
+    - node.type.site
+id: node.rig.field_location
+field_name: field_location
+entity_type: node
+bundle: rig
+label: Standort
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      site: site
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

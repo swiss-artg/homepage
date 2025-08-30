@@ -1,0 +1,29 @@
+uuid: 2bc210c5-d675-4703-8cb5-b18b31a92516
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mode
+    - node.type.mode
+    - node.type.rig
+id: node.rig.field_mode
+field_name: field_mode
+entity_type: node
+bundle: rig
+label: Betriebsart
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      mode: mode
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
