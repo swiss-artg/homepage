@@ -1,0 +1,21 @@
+uuid: 913b880c-7205-408e-85a8-021940674c95
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - views
+    - viewsreference
+id: node.field_rigs
+field_name: field_rigs
+entity_type: node
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

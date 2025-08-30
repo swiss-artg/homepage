@@ -1,0 +1,33 @@
+uuid: 3503efae-697c-4f65-8de5-b0f483de3b32
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.site.field_rigs
+    - node.type.site
+  module:
+    - user
+    - viewsreference
+id: node.site.default
+targetEntityType: node
+bundle: site
+mode: default
+content:
+  field_rigs:
+    type: viewsreference_formatter
+    label: above
+    settings:
+      plugin_types:
+        default: default
+        page: '0'
+        feed: '0'
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

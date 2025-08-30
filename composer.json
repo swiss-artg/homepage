@@ -37,6 +37,7 @@
         "drupal/pathauto": "^1.13",
         "drupal/photoswipe": "^5.0",
         "drupal/redirect": "^1.11",
+        "drupal/viewsreference": "^2.0@beta",
         "drush/drush": "^13.3",
         "oomphinc/composer-installers-extender": "^2.0"
     },
