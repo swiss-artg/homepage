@@ -25,6 +25,8 @@ settings:
   plugin_types:
     default: default
   preselect_views:
+    sites: sites
+    modes: modes
     rigs: rigs
   enabled_settings:
     argument: argument
