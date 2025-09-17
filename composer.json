@@ -27,6 +27,7 @@
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
+        "drupal/display_field_copy": "^2.1",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/filefield_paths": "^1.0@beta",
         "drupal/geolocation": "^3.14",
