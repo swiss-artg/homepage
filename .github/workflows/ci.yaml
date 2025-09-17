@@ -65,7 +65,15 @@ jobs:
       - name: Download from remote
         if: steps.remote.outputs.cache-matched-key == ''
         run: |
-          rclone --exclude-from .ftpignore --copy-links sync remote: ${{ runner.temp }}/remote
+          sudo apt install -y oathtool
+          curl \
+            --fail \
+            --user '${{ secrets.HTTP_USER }}:${{ secrets.HTTP_PASSWORD }}' \
+            --data "totp=$(oathtool --base32 --totp ${{ secrets.HTTP_TOTP }})" \
+            --request POST \
+            --output ${{ runner.temp }}/remote.tar \
+            https://vorschau.swiss-artg.ch/export.php
+          tar -xf ${{ runner.temp }}/remote.tar -C ${{ runner.temp }}/remote
 
       # Prevent future cache misses if steps further down below are failing
       - name: Update cache
