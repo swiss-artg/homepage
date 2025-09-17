@@ -12,6 +12,7 @@ composer.*
 docker*
 package-lock.json
 package.json
+private/archive.tar
 web/*lint*
 web/sites/*/files/
 web/sites/*/settings.*.php
