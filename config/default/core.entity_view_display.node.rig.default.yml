@@ -22,15 +22,16 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_location:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: inline
     settings:
-      link: true
+      view_mode: map
+      link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
   field_mode:
     type: entity_reference_label
@@ -38,7 +39,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   links:
     settings: {  }

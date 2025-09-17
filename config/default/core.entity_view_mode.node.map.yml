@@ -1,0 +1,11 @@
+uuid: 1d43fa5e-0473-483c-8843-9aefff452fef
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: node.map
+label: Karte
+description: null
+targetEntityType: node
+cache: true
