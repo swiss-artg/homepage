@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.site.field_body
+    - field.field.node.site.field_geolocation
     - field.field.node.site.field_rigs
     - node.type.site
   module:
+    - geolocation
     - layout_paragraphs
     - user
     - viewsreference
@@ -23,6 +25,13 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_geolocation:
+    type: geolocation_latlng
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_rigs:
     type: viewsreference_formatter

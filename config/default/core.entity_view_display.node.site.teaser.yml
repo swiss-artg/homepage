@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.site.field_body
+    - field.field.node.site.field_geolocation
     - field.field.node.site.field_rigs
     - node.type.site
   module:
@@ -21,5 +22,6 @@ content:
     region: content
 hidden:
   field_body: true
+  field_geolocation: true
   field_rigs: true
   langcode: true

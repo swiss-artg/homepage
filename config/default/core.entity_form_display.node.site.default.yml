@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.site.field_body
+    - field.field.node.site.field_geolocation
     - field.field.node.site.field_rigs
     - node.type.site
   module:
+    - geolocation
     - layout_paragraphs
     - path
 id: node.site.default
@@ -22,7 +24,7 @@ content:
     third_party_settings: {  }
   field_body:
     type: layout_paragraphs
-    weight: 121
+    weight: 10
     region: content
     settings:
       view_mode: default
@@ -31,6 +33,12 @@ content:
       nesting_depth: 0
       require_layouts: 1
       empty_message: ''
+    third_party_settings: {  }
+  field_geolocation:
+    type: geolocation_latlng
+    weight: 9
+    region: content
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select
