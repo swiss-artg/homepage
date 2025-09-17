@@ -1,0 +1,22 @@
+uuid: 4c8a635c-4528-4da3-a3b8-fb2e302ae72d
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: modes
+label: Betriebsarten
+type: 'canonical_entities:node'
+pattern: 'betriebsarten/[node:title]'
+selection_criteria:
+  ec8c93d5-443c-4fc2-91f4-94f819b5e8ef:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ec8c93d5-443c-4fc2-91f4-94f819b5e8ef
+    context_mapping:
+      node: node
+    bundles:
+      mode: mode
+selection_logic: and
+weight: -5
+relationships: {  }
