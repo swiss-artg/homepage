@@ -1,0 +1,22 @@
+uuid: 23b999c6-7f11-4ef6-a4dc-421ac4eac2ff
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.mode
+id: node.mode.promote
+field_name: promote
+entity_type: node
+bundle: mode
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

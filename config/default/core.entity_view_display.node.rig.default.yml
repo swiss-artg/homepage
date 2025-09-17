@@ -1,0 +1,50 @@
+uuid: 353d75fb-07b5-4dcf-9949-e59bb0cd87ca
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.rig.field_body
+    - field.field.node.rig.field_location
+    - field.field.node.rig.field_mode
+    - node.type.rig
+  module:
+    - layout_paragraphs
+    - user
+id: node.rig.default
+targetEntityType: node
+bundle: rig
+mode: default
+content:
+  field_body:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_location:
+    type: entity_reference_entity_view
+    label: inline
+    settings:
+      view_mode: map
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_mode:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: a95f3a87-6ab1-4d03-847c-5dd218adb22a
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+id: sites
+label: Standorte
+type: 'canonical_entities:node'
+pattern: 'standorte/[node:title]'
+selection_criteria:
+  f3d5b84c-0cfa-4257-acb5-e0e723b797ac:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f3d5b84c-0cfa-4257-acb5-e0e723b797ac
+    context_mapping:
+      node: node
+    bundles:
+      site: site
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,27 @@
+uuid: 3266ba2d-878f-4039-b992-0e129d866f1c
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.site.field_body
+    - field.field.node.site.field_geolocation
+    - field.field.node.site.field_rigs
+    - node.type.site
+  module:
+    - user
+id: node.site.teaser
+targetEntityType: node
+bundle: site
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body: true
+  field_geolocation: true
+  field_rigs: true
+  langcode: true

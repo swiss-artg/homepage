@@ -1,0 +1,36 @@
+uuid: 244c50e1-20d5-41a6-aa93-89f6b86a3619
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rigs
+    - node.type.site
+    - views.view.rigs
+  module:
+    - viewsreference
+id: node.site.field_rigs
+field_name: field_rigs
+entity_type: node
+bundle: site
+label: Anlagen
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 6bbfa86a-a753-4281-a6ac-2cb5cd8f9b70
+    display_id: default
+    data: 'a:6:{s:5:"limit";N;s:8:"argument";N;s:5:"pager";N;s:5:"title";N;s:6:"header";N;s:6:"offset";N;}'
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    default: default
+  preselect_views:
+    rigs: rigs
+  enabled_settings:
+    argument: argument
+field_type: viewsreference

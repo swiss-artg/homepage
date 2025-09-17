@@ -27,8 +27,10 @@
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
+        "drupal/display_field_copy": "^2.1",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/filefield_paths": "^1.0@beta",
+        "drupal/geolocation": "^3.14",
         "drupal/layout_paragraphs": "^2.1",
         "drupal/linkit": "^7.0",
         "drupal/migrate_plus": "^6.0",
@@ -37,6 +39,7 @@
         "drupal/pathauto": "^1.13",
         "drupal/photoswipe": "^5.0",
         "drupal/redirect": "^1.11",
+        "drupal/viewsreference": "^2.0@beta",
         "drush/drush": "^13.3",
         "oomphinc/composer-installers-extender": "^2.0"
     },

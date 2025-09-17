@@ -1,0 +1,18 @@
+uuid: dfcb885a-c4d2-4ff2-aea0-e48d674612ce
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Standort
+type: site
+description: 'Standort an dem eine oder mehrere Anlagen betrieben werden.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

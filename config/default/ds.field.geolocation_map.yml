@@ -1,0 +1,9 @@
+id: geolocation_map
+label: 'Locator Karte'
+ui_limit: 'site|*'
+type: display_field_copy
+type_label: 'Copy field'
+entities:
+  node: node
+properties:
+  field_id: node.site.field_geolocation
