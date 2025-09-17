@@ -28,6 +28,7 @@ settings:
     sites: sites
     modes: modes
     rigs: rigs
+    sites_map: sites_map
   enabled_settings:
     argument: argument
 field_type: viewsreference
