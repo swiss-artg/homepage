@@ -8,9 +8,12 @@ dependencies:
     - media.type.file
     - media.type.image
     - node.type.migrated_page
+    - node.type.mode
     - node.type.news
     - node.type.news_migrated
     - node.type.page
+    - node.type.rig
+    - node.type.site
   module:
     - coffee
     - file
@@ -33,30 +36,51 @@ permissions:
   - 'administer menu'
   - 'create file media'
   - 'create image media'
+  - 'create mode content'
   - 'create news content'
   - 'create page content'
+  - 'create rig content'
+  - 'create site content'
   - 'delete any file media'
   - 'delete any image media'
+  - 'delete any mode content'
   - 'delete any page content'
+  - 'delete any rig content'
+  - 'delete any site content'
   - 'delete own file media'
   - 'delete own image media'
+  - 'delete own mode content'
   - 'delete own page content'
+  - 'delete own rig content'
+  - 'delete own site content'
   - 'edit any file media'
   - 'edit any image media'
   - 'edit any migrated_page content'
+  - 'edit any mode content'
   - 'edit any news content'
   - 'edit any news_migrated content'
   - 'edit any page content'
+  - 'edit any rig content'
+  - 'edit any site content'
   - 'edit own file media'
   - 'edit own image media'
+  - 'edit own mode content'
   - 'edit own page content'
+  - 'edit own rig content'
+  - 'edit own site content'
   - 'revert any file media revisions'
   - 'revert any image media revisions'
+  - 'revert mode revisions'
   - 'revert page revisions'
+  - 'revert rig revisions'
+  - 'revert site revisions'
   - 'use text format html'
   - 'use text format html_full'
   - 'view any file media revisions'
   - 'view any image media revisions'
+  - 'view mode revisions'
   - 'view own unpublished content'
   - 'view page revisions'
+  - 'view rig revisions'
+  - 'view site revisions'
   - 'view the administration theme'

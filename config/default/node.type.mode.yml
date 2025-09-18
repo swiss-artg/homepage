@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:'
+    parent: 'main:menu_link_content:50480ca8-1d6b-4e91-b41f-fe3d96a9ff9c'
 name: Betriebsart
 type: mode
 description: 'Eine im Amateurfunk gängige analoge, digitale oder daten Betriebsart.'
