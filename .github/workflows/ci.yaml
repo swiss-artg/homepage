@@ -92,7 +92,12 @@ jobs:
       - name: Dry run upload to remote
         if: github.ref != 'refs/heads/trunk'
         run: |
-          rclone -q --exclude-from .ftpignore --copy-links check --combined - ${{ runner.temp }}/remote remote: 2>/dev/null | grep -vE '^= '
+          rclone -q --exclude-from .ftpignore --copy-links check --combined - "${{ runner.temp }}/remote" remote: >"${{ runner.temp }}/diff" 2>"${{ runner.temp }}/error"
+          if [ $? -ne 0 ]; then
+            cat "${{ runner.temp }}/error"
+            exit 1
+          fi
+          grep -vE '^= ' "${{ runner.temp }}/diff"
 
       - name: Upload to remote
         if: github.ref == 'refs/heads/trunk'
