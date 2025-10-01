@@ -35,65 +35,32 @@ $dirname = realpath(__DIR__ . '/..');
 // Location to store the download archive.
 $filename = $dirname . '/private/archive.tar';
 
-try {
-  // TOTP access check.
-  $totp = $_POST['totp'] ?? null;
-  if ($totp != totp(base64_decode('81GUnotStNFiPc4wjr0dq/Sg3cg='), floor(time() / 30))) {
-    http_response_code(404);
-    die();
-  }
-
-  // List of file patterns to exclude from the archive.
-  $excluded = file($dirname . '/.ftpignore', FILE_IGNORE_NEW_LINES);
-
-  // Filtered recursive file iteration
-  //
-  // This iterator is used by the archive builder.
-  // It recursivly iterates over all files.
-  // Some files filtererd and will not be part of the resulting archive.
-  $dir = new RecursiveDirectoryIterator($dirname);
-  $files = new RecursiveCallbackFilterIterator($dir, function($file, $key, $iterator) use ($dirname, $excluded){
-    $relname = substr($file->getRealPath(), strlen($dirname) + 1);
-
-    // Prevent accessing the target directory.
-    // Prevents triggering a PHP security featrue preventing access to certain files.
-    if ($relname == "") {
-      return false;
-    }
-
-    // Check if file should be excluded.
-    foreach ($excluded as $ex) {
-      if (fnmatch($ex, $relname)) {
-        return false;
-      }
-    }
-
-    return $iterator->hasChildren() || $file->isFile();
-  });
-
-  // Clean up the old archive.
-  // Omitting this can prevent creating a new one at the same location.
-  if (file_exists($filename)) {
-    unlink($filename);
-  }
-
-  // Create the archive.
-  $tar = new PharData($filename);
-  $tar->buildFromIterator(new RecursiveIteratorIterator($files), $dirname);
-
-  // Clean output buffer and write new set of response headers.
-  ob_clean();
-  header('Content-Type: "application/x-tar"');
-  header('Content-Disposition: attachment; filename="archive.tar"');
-  header("Content-Transfer-Encoding: binary");
-  header('Expires: 0');
-  header('Pragma: no-cache');
-  header("Content-Length: " . filesize(trim($filename)));
-
-  // Send the file.
-  readfile($filename);
+// TOTP access check.
+$totp = $_POST['totp'] ?? null;
+if ($totp != totp(base64_decode('81GUnotStNFiPc4wjr0dq/Sg3cg='), floor(time() / 30))) {
+  http_response_code(404);
+  die();
 }
-catch (Exception $e) {
+
+// Create the archive.
+$cmd = 'tar --owner 0 --group 0 --exclude-from ' . escapeshellarg($dirname . '/.ftpignore') . ' -cf ' . escapeshellarg($filename) . ' --directory ' . escapeshellarg($dirname) . ' .';
+exec($cmd, $output, $code);
+if (0 !== $code) {
   http_response_code(500);
-	die($e);
+  foreach ($output as $line) {
+    echo $line . PHP_EOL;
+  }
+  die("failed to create archive ({$code})");
 }
+
+// Clean output buffer and write new set of response headers.
+ob_clean();
+header('Content-Type: "application/x-tar"');
+header('Content-Disposition: attachment; filename="archive.tar"');
+header("Content-Transfer-Encoding: binary");
+header('Expires: 0');
+header('Pragma: no-cache');
+header("Content-Length: " . filesize(trim($filename)));
+
+// Send the file.
+readfile($filename);
