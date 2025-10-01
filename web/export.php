@@ -91,7 +91,7 @@ try {
   header("Content-Length: " . filesize(trim($filename)));
 
   // Send the file.
-  readfile($filename)
+  readfile($filename);
 }
 catch (Exception $e) {
   http_response_code(500);

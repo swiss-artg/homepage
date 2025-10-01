@@ -73,6 +73,7 @@ jobs:
             --request POST \
             --output ${{ runner.temp }}/remote.tar \
             https://vorschau.swiss-artg.ch/export.php
+          mkdir -p ${{ runner.temp }}/remote
           tar -xf ${{ runner.temp }}/remote.tar -C ${{ runner.temp }}/remote
 
       # Prevent future cache misses if steps further down below are failing
