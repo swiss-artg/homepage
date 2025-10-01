@@ -3,7 +3,6 @@
 .ddev*
 .ddev*/**
 .editorconfig
-.ftp*
 .git*
 .git*/**
 /node_modules/
