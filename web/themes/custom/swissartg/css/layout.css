@@ -29,6 +29,7 @@
     "menu help"
     "menu content"
     "footer footer";
+    grid-template-rows: auto auto minmax(0, auto) auto auto;
   }
 }
 
