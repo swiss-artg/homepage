@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.association_role
+    - field.field.user.user.field_portrait
+    - image.style.small
   module:
     - ds
+    - media
     - user
 third_party_settings:
   ds:
@@ -15,19 +18,20 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        label: ""
         classes:
-          layout_class: {  }
+          layout_class: {}
         wrappers:
           ds_content: div
         outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
+        attributes: ""
+        link_attribute: ""
+        link_custom: ""
     regions:
       ds_content:
         - username
         - usermail
+        - field_portrait
     fields:
       username:
         plugin_id: username
@@ -36,14 +40,25 @@ third_party_settings:
         formatter: default
       usermail:
         plugin_id: usermail
-        weight: 0
+        weight: 1
         label: hidden
         formatter: default
 id: user.user.association_role
 targetEntityType: user
 bundle: user
 mode: association_role
-content: {  }
+content:
+  field_portrait:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ""
+      image_style: small
+      image_loading:
+        attribute: lazy
+    third_party_settings: {}
+    weight: 2
+    region: ds_content
 hidden:
   langcode: true
   member_for: true

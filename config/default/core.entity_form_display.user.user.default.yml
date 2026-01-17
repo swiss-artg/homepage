@@ -1,0 +1,40 @@
+uuid: c737ca78-0bd0-47dc-9edb-68fd32c3cd3c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_portrait
+  module:
+    - media_library
+    - path
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_portrait:
+    type: media_library_widget
+    weight: 31
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  language:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

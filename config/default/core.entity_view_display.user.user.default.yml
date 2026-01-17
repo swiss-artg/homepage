@@ -1,0 +1,21 @@
+uuid: 7df4f074-9aa4-4824-804b-bb4f8230fa27
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_portrait
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_portrait: true
+  langcode: true
