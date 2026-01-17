@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_forename
+    - field.field.user.user.field_phonenumber
     - field.field.user.user.field_portrait
     - field.field.user.user.field_surname
   module:
@@ -20,6 +21,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_phonenumber:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_surname:
     type: string

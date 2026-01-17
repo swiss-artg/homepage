@@ -5,12 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.user.association_role
     - field.field.user.user.field_forename
+    - field.field.user.user.field_phonenumber
     - field.field.user.user.field_portrait
     - field.field.user.user.field_surname
     - image.style.small
   module:
     - ds
     - media
+    - telephone
     - user
 third_party_settings:
   ds:
@@ -35,6 +37,7 @@ third_party_settings:
         - field_forename
         - field_surname
         - usermail
+        - field_phonenumber
         - field_portrait
     fields:
       username:
@@ -47,6 +50,8 @@ third_party_settings:
         weight: 3
         label: hidden
         formatter: default
+        settings:
+          mail_link: 0
 id: user.user.association_role
 targetEntityType: user
 bundle: user
@@ -60,6 +65,14 @@ content:
     third_party_settings: {}
     weight: 1
     region: ds_content
+  field_phonenumber:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ""
+    third_party_settings: {}
+    weight: 4
+    region: ds_content
   field_portrait:
     type: media_thumbnail
     label: hidden
@@ -69,7 +82,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {}
-    weight: 4
+    weight: 5
     region: ds_content
   field_surname:
     type: string
