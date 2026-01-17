@@ -1,0 +1,11 @@
+uuid: b3f2984b-48d1-4c1a-aef2-1e07cad0c254
+langcode: de
+status: true
+dependencies:
+  module:
+    - user
+id: user.association_role
+label: Vereinsfunktion
+description: null
+targetEntityType: user
+cache: true

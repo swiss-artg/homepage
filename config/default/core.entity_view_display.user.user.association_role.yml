@@ -1,0 +1,49 @@
+uuid: 105622e6-25b9-4ff5-97a4-d26c7711274e
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.association_role
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - username
+        - usermail
+    fields:
+      username:
+        plugin_id: username
+        weight: 0
+        label: hidden
+        formatter: default
+      usermail:
+        plugin_id: usermail
+        weight: 0
+        label: hidden
+        formatter: default
+id: user.user.association_role
+targetEntityType: user
+bundle: user
+mode: association_role
+content: {  }
+hidden:
+  langcode: true
+  member_for: true
