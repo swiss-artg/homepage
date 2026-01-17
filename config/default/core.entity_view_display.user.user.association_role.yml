@@ -45,6 +45,12 @@ third_party_settings:
         weight: 0
         label: hidden
         formatter: default
+        settings:
+          link: false
+          'link class': ''
+          link_target: ''
+          wrapper: ''
+          class: ''
       usermail:
         plugin_id: usermail
         weight: 3

@@ -21,7 +21,7 @@ content:
     region: content
   field_user:
     type: entity_reference_entity_view
-    label: visually_hidden
+    label: hidden
     settings:
       view_mode: association_role
       link: false

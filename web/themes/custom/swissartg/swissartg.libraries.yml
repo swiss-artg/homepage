@@ -6,6 +6,7 @@ global-styling:
     layout:
       css/layout.css: {}
     component:
+      css/association_role.css: {}
       css/breadcrumb.css: {}
       css/menu-local-tasks.css: {}
       css/menu.css: {}
