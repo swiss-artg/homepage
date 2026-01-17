@@ -1,0 +1,31 @@
+uuid: 3b143563-37ca-42ed-b6e6-4a5dd6879a3e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.association_role.field_association_role_name
+    - field.field.paragraph.association_role.field_user
+    - paragraphs.paragraphs_type.association_role
+id: paragraph.association_role.default
+targetEntityType: paragraph
+bundle: association_role
+mode: default
+content:
+  field_association_role_name:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_user:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

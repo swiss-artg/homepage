@@ -1,0 +1,10 @@
+uuid: b39cb3a4-0ce8-453d-af98-5bb8dd981149
+langcode: de
+status: true
+dependencies: {  }
+id: association_role
+label: Vereinsfunktion
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
