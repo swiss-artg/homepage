@@ -1,9 +1,9 @@
-uuid: ad50bb14-7fbd-4326-b474-ace5a6f4412d
+uuid: 6b122597-ff85-4915-9a2c-b901de90a29b
 langcode: de
 status: true
 dependencies:
   content:
-    - 'block_content:image:48986950-cb7d-4a03-855a-78f06c0927a3'
+    - 'block_content:image:4b01aee0-8658-47b9-a43d-3c90f394c581'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: swissartg
 region: footer
 weight: 0
 provider: null
-plugin: 'block_content:48986950-cb7d-4a03-855a-78f06c0927a3'
+plugin: 'block_content:4b01aee0-8658-47b9-a43d-3c90f394c581'
 settings:
-  id: 'block_content:48986950-cb7d-4a03-855a-78f06c0927a3'
+  id: 'block_content:4b01aee0-8658-47b9-a43d-3c90f394c581'
   label: Lochstreifen
   label_display: '0'
   provider: block_content

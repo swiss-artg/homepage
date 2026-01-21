@@ -359,7 +359,7 @@ display:
         type: normal
         title: 'SWISS-ARTG HB9AK'
         description: ''
-        weight: 0
+        weight: -50
         expanded: true
         menu_name: main
         parent: ''
