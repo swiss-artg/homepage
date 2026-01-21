@@ -5,21 +5,19 @@ dependencies:
   config:
     - block_content.type.image
     - field.field.block_content.image.field_image
-    - image.style.thumbnail
   module:
-    - image
+    - media_library
 id: block_content.image.default
 targetEntityType: block_content
 bundle: image
 mode: default
 content:
   field_image:
-    type: image_image
+    type: media_library_widget
     weight: 26
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   info:
     type: string_textfield

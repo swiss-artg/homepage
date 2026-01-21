@@ -1,0 +1,11 @@
+uuid: d9038a81-27ea-4199-ba13-f573d21397bf
+langcode: de
+status: true
+dependencies:
+  module:
+    - media
+id: media.plain
+label: Einfach
+description: null
+targetEntityType: media
+cache: true
