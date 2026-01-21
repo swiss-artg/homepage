@@ -1,55 +1,43 @@
-uuid: 2183c346-b39a-4c0d-92a2-cfeeb686dbd4
+uuid: b1f4317a-a374-40c5-bdce-e4e89dce32f0
 langcode: de
 status: true
 dependencies:
   config:
-    - field.field.node.site.field_body
-    - field.field.node.site.field_geolocation
-    - field.field.node.site.field_partner
-    - field.field.node.site.field_rigs
-    - node.type.site
+    - field.field.node.partner.body
+    - field.field.node.partner.field_url
+    - node.type.partner
   module:
-    - geolocation
-    - layout_paragraphs
+    - link
     - path
-id: node.site.default
+    - text
+id: node.partner.default
 targetEntityType: node
-bundle: site
+bundle: partner
 mode: default
 content:
+  body:
+    type: text_textarea_with_summary
+    weight: 10
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_body:
-    type: layout_paragraphs
-    weight: 11
-    region: content
-    settings:
-      view_mode: default
-      preview_view_mode: default
-      form_display_mode: default
-      nesting_depth: 0
-      require_layouts: 1
-      empty_message: ''
-    third_party_settings: {  }
-  field_geolocation:
-    type: geolocation_latlng
+  field_url:
+    type: link_default
     weight: 9
     region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_partner:
-    type: entity_reference_autocomplete
-    weight: 10
-    region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -108,5 +96,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_rigs: true
+hidden: {  }
