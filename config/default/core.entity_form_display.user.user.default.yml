@@ -1,0 +1,57 @@
+uuid: c737ca78-0bd0-47dc-9edb-68fd32c3cd3c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_forename
+    - field.field.user.user.field_phonenumber
+    - field.field.user.user.field_portrait
+    - field.field.user.user.field_surname
+  module:
+    - media_library
+    - telephone
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_forename:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phonenumber:
+    type: telephone_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_portrait:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_surname:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  language: true
+  path: true

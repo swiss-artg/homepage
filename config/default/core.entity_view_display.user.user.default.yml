@@ -1,0 +1,48 @@
+uuid: 7df4f074-9aa4-4824-804b-bb4f8230fa27
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_forename
+    - field.field.user.user.field_phonenumber
+    - field.field.user.user.field_portrait
+    - field.field.user.user.field_surname
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_forename:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_phonenumber:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_surname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_portrait: true
+  langcode: true
+  realname: true

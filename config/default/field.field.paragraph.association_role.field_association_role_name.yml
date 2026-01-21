@@ -1,0 +1,19 @@
+uuid: 53928d5a-699a-402a-8c6b-1949820c4f2f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_association_role_name
+    - paragraphs.paragraphs_type.association_role
+id: paragraph.association_role.field_association_role_name
+field_name: field_association_role_name
+entity_type: paragraph
+bundle: association_role
+label: Funktion
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,74 @@
+.paragraph--type--association-role {
+  display: grid;
+  grid-template-areas:
+    "role role"
+    "call call"
+    "forename surname"
+    "email email"
+    "phone phone"
+    "portrait portrait";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+  gap: var(--spacing) calc(var(--spacing) / 3);
+  margin-bottom: var(--spacing);
+}
+
+@media screen and (min-width: 450px) {
+  .paragraph--type--association-role {
+    grid-template-areas:
+      "role role role"
+      "call call portrait"
+      "forename surname portrait"
+      "email email portrait"
+      "phone phone portrait";
+    grid-template-rows: auto auto auto auto 1fr;
+    grid-template-columns: auto 1fr 35%;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  .paragraph--type--association-role {
+    grid-template-areas:
+      "role call call email portrait"
+      "role forename surname phone portrait";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 20% auto 1fr 30% 25%;
+  }
+}
+
+.paragraph-association-role__field-user,
+.user--view-mode-association-role {
+  display: contents;
+}
+
+.paragraph-association-role__field-association-role-name {
+  grid-area: role;
+}
+
+.field-username {
+  grid-area: call;
+  text-transform: uppercase;
+}
+.user-user-association-role__field-forename {
+  grid-area: forename;
+}
+
+.user-user-association-role__field-surname {
+  grid-area: surname;
+}
+
+.field-usermail {
+  grid-area: email;
+}
+
+.user-user-association-role__field-phonenumber {
+  grid-area: phone;
+}
+
+.user-user-association-role__field-portrait {
+  grid-area: portrait;
+}
+
+.user-user-association-role__field-portrait img {
+  max-width: 10em;
+}

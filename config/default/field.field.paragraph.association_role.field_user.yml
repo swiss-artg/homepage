@@ -1,0 +1,29 @@
+uuid: 87f54d59-2c59-4c40-9987-3c499df8f9a9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_user
+    - paragraphs.paragraphs_type.association_role
+id: paragraph.association_role.field_user
+field_name: field_user
+entity_type: paragraph
+bundle: association_role
+label: Person
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference
