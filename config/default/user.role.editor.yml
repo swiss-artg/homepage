@@ -13,6 +13,7 @@ dependencies:
     - node.type.news
     - node.type.news_migrated
     - node.type.page
+    - node.type.partner
     - node.type.rig
     - node.type.site
   module:
@@ -43,6 +44,7 @@ permissions:
   - 'create mode content'
   - 'create news content'
   - 'create page content'
+  - 'create partner content'
   - 'create rig content'
   - 'create site content'
   - 'delete any audio media'
@@ -54,6 +56,7 @@ permissions:
   - 'delete any media'
   - 'delete any mode content'
   - 'delete any page content'
+  - 'delete any partner content'
   - 'delete any rig content'
   - 'delete any site content'
   - 'delete media'
@@ -62,6 +65,7 @@ permissions:
   - 'delete own image media'
   - 'delete own mode content'
   - 'delete own page content'
+  - 'delete own partner content'
   - 'delete own rig content'
   - 'delete own site content'
   - 'edit any audio media'
@@ -72,6 +76,7 @@ permissions:
   - 'edit any news content'
   - 'edit any news_migrated content'
   - 'edit any page content'
+  - 'edit any partner content'
   - 'edit any rig content'
   - 'edit any site content'
   - 'edit own audio media'
@@ -79,6 +84,7 @@ permissions:
   - 'edit own image media'
   - 'edit own mode content'
   - 'edit own page content'
+  - 'edit own partner content'
   - 'edit own rig content'
   - 'edit own site content'
   - 'revert any audio media revisions'
@@ -86,6 +92,7 @@ permissions:
   - 'revert any image media revisions'
   - 'revert mode revisions'
   - 'revert page revisions'
+  - 'revert partner revisions'
   - 'revert rig revisions'
   - 'revert site revisions'
   - 'update any media'
@@ -100,6 +107,7 @@ permissions:
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view page revisions'
+  - 'view partner revisions'
   - 'view rig revisions'
   - 'view site revisions'
   - 'view the administration theme'
