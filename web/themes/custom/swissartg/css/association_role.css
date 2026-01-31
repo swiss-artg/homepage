@@ -13,7 +13,11 @@
   margin-bottom: var(--spacing);
 }
 
-@media screen and (min-width: 450px) {
+.layout__region {
+  container-type: inline-size;
+}
+
+@container (min-width: 300px) {
   .paragraph--type--association-role {
     grid-template-areas:
       "role role role"
@@ -26,7 +30,19 @@
   }
 }
 
-@media screen and (min-width: 970px) {
+@container (min-width: 450px) {
+  .paragraph--type--association-role {
+    grid-template-areas:
+      "role call call portrait"
+      "role forename surname portrait"
+      "role email email portrait"
+      "role phone phone portrait";
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-columns: 20% auto 1fr 25%;
+  }
+}
+
+@container (min-width: 600px) {
   .paragraph--type--association-role {
     grid-template-areas:
       "role call call email portrait"
