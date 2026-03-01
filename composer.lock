@@ -976,29 +976,29 @@
         },
         {
             "name": "doctrine/deprecations",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/deprecations.git",
-                "reference": "459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38"
+                "reference": "d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38",
-                "reference": "459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca",
+                "reference": "d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0"
             },
             "conflict": {
-                "phpunit/phpunit": "<=7.5 || >=13"
+                "phpunit/phpunit": "<=7.5 || >=14"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^9 || ^12 || ^13",
-                "phpstan/phpstan": "1.4.10 || 2.1.11",
+                "doctrine/coding-standard": "^9 || ^12 || ^14",
+                "phpstan/phpstan": "1.4.10 || 2.1.30",
                 "phpstan/phpstan-phpunit": "^1.0 || ^2",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6 || ^10.5 || ^11.5 || ^12",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6 || ^10.5 || ^11.5 || ^12.4 || ^13.0",
                 "psr/log": "^1 || ^2 || ^3"
             },
             "suggest": {
@@ -1018,9 +1018,9 @@
             "homepage": "https://www.doctrine-project.org/",
             "support": {
                 "issues": "https://github.com/doctrine/deprecations/issues",
-                "source": "https://github.com/doctrine/deprecations/tree/1.1.5"
+                "source": "https://github.com/doctrine/deprecations/tree/1.1.6"
             },
-            "time": "2025-04-07T20:06:18+00:00"
+            "time": "2026-02-07T07:09:04+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -1511,16 +1511,16 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "11.3.2",
+            "version": "11.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "b8ea85a2072b52f88a1fadec28306a3946980b8e"
+                "reference": "445bec7d1cf903d990398b68b0a7fd98270f986f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/b8ea85a2072b52f88a1fadec28306a3946980b8e",
-                "reference": "b8ea85a2072b52f88a1fadec28306a3946980b8e",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/445bec7d1cf903d990398b68b0a7fd98270f986f",
+                "reference": "445bec7d1cf903d990398b68b0a7fd98270f986f",
                 "shasum": ""
             },
             "require": {
@@ -1555,9 +1555,9 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.3.2"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.3.3"
             },
-            "time": "2025-10-13T16:03:31+00:00"
+            "time": "2026-01-26T12:09:35+00:00"
         },
         {
             "name": "drupal/core-project-message",
@@ -2488,30 +2488,26 @@
         },
         {
             "name": "drupal/linkit",
-            "version": "7.0.9",
+            "version": "7.0.13",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/linkit.git",
-                "reference": "7.0.9"
+                "reference": "7.0.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/linkit-7.0.9.zip",
-                "reference": "7.0.9",
-                "shasum": "fa75d31583a5866c8dd1f0455b7b5d19642c6f34"
+                "url": "https://ftp.drupal.org/files/projects/linkit-7.0.13.zip",
+                "reference": "7.0.13",
+                "shasum": "918d001248b4a394eb1c4e097e7d243959280489"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11"
             },
-            "require-dev": {
-                "drupal/ckeditor": "*",
-                "drupal/imce": "*"
-            },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "7.0.9",
-                    "datestamp": "1757621287",
+                    "version": "7.0.13",
+                    "datestamp": "1772036178",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
