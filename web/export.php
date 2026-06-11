@@ -43,7 +43,7 @@ if ($totp != totp(base64_decode('81GUnotStNFiPc4wjr0dq/Sg3cg='), floor(time() / 
 }
 
 // Create the archive.
-$cmd = 'tar --owner 0 --group 0 --exclude-from ' . escapeshellarg($dirname . '/.ftpignore') . ' -cf ' . escapeshellarg($filename) . ' --directory ' . escapeshellarg($dirname) . ' .';
+$cmd = 'tar --owner 0 --group 0 --exclude-from ' . escapeshellarg($dirname . '/.ftpignore') . ' -cf ' . escapeshellarg($filename) . ' --directory ' . escapeshellarg($dirname) . ' ./';
 exec($cmd, $output, $code);
 if (0 !== $code) {
   http_response_code(500);
