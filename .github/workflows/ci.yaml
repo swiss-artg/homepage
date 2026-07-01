@@ -38,7 +38,7 @@ jobs:
         shell: bash
 
       - name: Setup cache
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         id: remote
         with:
           path: ${{ runner.temp }}/remote
@@ -79,7 +79,7 @@ jobs:
       # Prevent future cache misses if steps further down below are failing
       - name: Update cache
         if: steps.remote.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         with:
           path: ${{ runner.temp }}/remote
           key: ${{ steps.remote.outputs.cache-primary-key }}
